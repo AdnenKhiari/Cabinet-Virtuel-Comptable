@@ -1,0 +1,452 @@
+[{
+  "_id": {
+    "$oid": "65078b06d1c588449b782618"
+  },
+  "userId": "631b17d99bafc557c8edd79a",
+  "nature": "Déclaration Mensuelle",
+  "origine": "généré automatiquement",
+  "mois": "01",
+  "annee": "2023",
+  "matriculefiscale": "1234567 P/A/P/000",
+  "firstname": "Salim",
+  "lastname": "Rezg",
+  "raisonsociale": null,
+  "adresse": "mohamed V",
+  "codepostal": "3100",
+  "activite": "Médecin",
+  "regimefiscalimpot": "Réel",
+  "sousactivite": "Médecin spécialiste",
+  "source": "",
+  "statutadmin": [],
+  "statutcollab": [
+    {
+      "statutclient": "déposé par le client",
+      "motifclient": "",
+      "datefin": {
+        "$numberLong": "1694993718694"
+      },
+      "duree": ""
+    },
+    {
+      "statutclient": "déposé par le client",
+      "motifclient": "",
+      "datefin": {
+        "$numberLong": "1694993867085"
+      },
+      "duree": ""
+    }
+  ],
+  "statutparam": [],
+  "impottype1": {
+    "traitementetsalaire": {
+      "salairebrut": null,
+      "salaireimposable": null,
+      "retenuealasource": null,
+      "contributionsociale": null
+    },
+    "location1": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location2": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location3": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location4": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire1": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire2": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire3": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10001": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10002": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10003": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10004": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "type": "Retenue à la source",
+    "autre": []
+  },
+  "impottype2": {
+    "tvacollecter": {
+      "type": "TVA collecté",
+      "chiffreaffaireht": "2100",
+      "tvaammount": "147",
+      "ammountttc": "2247"
+    },
+    "tvacollecter19": {
+      "type": "",
+      "chiffreaffaireht": "120",
+      "tvaammount": "22.8",
+      "ammountttc": "142.8"
+    },
+    "tvarecuperableimmobilier": {
+      "type": "",
+      "achatlocauxht": "",
+      "achatlocauxtva": ""
+    },
+    "tvarecuperableequipement": {
+      "type": "",
+      "achatlocauxht": "",
+      "achatlocauxtva": "",
+      "achatimporteht": "",
+      "achatimportetva": ""
+    },
+    "tvarecuperableautreachat": {
+      "type": "TVA récupérable pour les autres achats",
+      "achatlocauxht": "1200",
+      "achatlocauxtva": "0",
+      "achatimporteht": "",
+      "achatimportetva": ""
+    },
+    "locationhabitationmeuble": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "locationusagecommercial": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "operationlotissement": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "interetpercue": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "autretvaspecial": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": "",
+      "taux": ""
+    },
+    "type": "TVA",
+    "reporttvamoisprecedent": ""
+  },
+  "impottype3": {
+    "type": "TFP",
+    "tfpsalairebrut": "",
+    "basetfp": "",
+    "montanttfpmois": "",
+    "reporttfpmoisprecedent": "",
+    "montantavance": "",
+    "tfppayer": "",
+    "tfpreporter": "",
+    "salairesnonsoumistfp": ""
+  },
+  "impottype4": {
+    "type": "FOPROLOS",
+    "foprolossalairebrut": "",
+    "basefoprolos": "",
+    "montantfoprolos": "",
+    "salairesnonsoumisfoprolos": ""
+  },
+  "impottype5": {
+    "type": "Droit de timbre",
+    "nombrenotehonoraire": "3",
+    "totaldroittimbre": "3"
+  },
+  "impottype6": {
+    "type": "TCL",
+    "chiffreaffairettc": "2389.8",
+    "tclpayer": "4.779"
+  },
+  "impottype7": {
+    "type": "FSSP",
+    "chiffreaffaireht": "2220",
+    "montantcontribution": "22.2"
+  },
+  "created": {
+    "$date": "2023-09-17T23:25:58.711Z"
+  },
+  "__v": 0,
+  "affecte": "",
+  "updated": {
+    "$date": "2023-10-27T08:34:41.995Z"
+  },
+  "dateouverturedossier": {
+    "$numberLong": "1698395680966"
+  }
+},
+{
+  "_id": {
+    "$oid": "65079315c83130fd08458e91"
+  },
+  "userId": "631b17d99bafc557c8edd79a",
+  "nature": "Déclaration Mensuelle",
+  "origine": "généré automatiquement",
+  "mois": "03",
+  "annee": "2023",
+  "matriculefiscale": "1234567 P/A/P/000",
+  "firstname": "Salim",
+  "lastname": "Rezg",
+  "raisonsociale": null,
+  "adresse": "mohamed V",
+  "codepostal": "3100",
+  "activite": "Médecin",
+  "regimefiscalimpot": "Réel",
+  "sousactivite": "Médecin spécialiste",
+  "source": "",
+  "statutadmin": [],
+  "statutcollab": [
+    {
+      "statutclient": "déposé par le client",
+      "motifclient": "",
+      "datefin": {
+        "$numberLong": "1694995097847"
+      },
+      "duree": ""
+    },
+    {
+      "statutclient": "déposé par le client",
+      "motifclient": "",
+      "datefin": {
+        "$numberLong": "1694995242685"
+      },
+      "duree": ""
+    }
+  ],
+  "statutparam": [],
+  "impottype1": {
+    "traitementetsalaire": {
+      "salairebrut": null,
+      "salaireimposable": null,
+      "retenuealasource": null,
+      "contributionsociale": null
+    },
+    "location1": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location2": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location3": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "location4": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire1": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire2": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "honoraire3": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10001": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10002": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10003": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "montant10004": {
+      "type": "",
+      "montantbrut": null,
+      "montantnet": null,
+      "montantretenue": null
+    },
+    "type": "Retenue à la source",
+    "autre": []
+  },
+  "impottype2": {
+    "tvacollecter": {
+      "type": "TVA collecté",
+      "chiffreaffaireht": "1400",
+      "tvaammount": "98",
+      "ammountttc": "1498"
+    },
+    "tvacollecter19": {
+      "type": "",
+      "chiffreaffaireht": "21",
+      "tvaammount": "3.99",
+      "ammountttc": "24.99"
+    },
+    "tvarecuperableimmobilier": {
+      "type": "",
+      "achatlocauxht": "",
+      "achatlocauxtva": ""
+    },
+    "tvarecuperableequipement": {
+      "type": "",
+      "achatlocauxht": "",
+      "achatlocauxtva": "",
+      "achatimporteht": "",
+      "achatimportetva": ""
+    },
+    "tvarecuperableautreachat": {
+      "type": "",
+      "achatlocauxht": "",
+      "achatlocauxtva": "",
+      "achatimporteht": "",
+      "achatimportetva": ""
+    },
+    "locationhabitationmeuble": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "locationusagecommercial": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "operationlotissement": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "interetpercue": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": ""
+    },
+    "autretvaspecial": {
+      "type": "",
+      "htammount": "",
+      "tvaammount": "",
+      "ttcammount": "",
+      "taux": ""
+    },
+    "type": "TVA",
+    "reporttvamoisprecedent": ""
+  },
+  "impottype3": {
+    "type": "TFP",
+    "tfpsalairebrut": "",
+    "basetfp": "",
+    "montanttfpmois": "",
+    "reporttfpmoisprecedent": "",
+    "montantavance": "",
+    "tfppayer": "",
+    "tfpreporter": "",
+    "salairesnonsoumistfp": ""
+  },
+  "impottype4": {
+    "type": "FOPROLOS",
+    "foprolossalairebrut": "",
+    "basefoprolos": "",
+    "montantfoprolos": "",
+    "salairesnonsoumisfoprolos": ""
+  },
+  "impottype5": {
+    "type": "Droit de timbre",
+    "nombrenotehonoraire": "1",
+    "totaldroittimbre": "1"
+  },
+  "impottype6": {
+    "type": "TCL",
+    "chiffreaffairettc": "1522.99",
+    "tclpayer": "3.045"
+  },
+  "impottype7": {
+    "type": "FSSP",
+    "chiffreaffaireht": "1421",
+    "montantcontribution": "14.21"
+  },
+  "created": {
+    "$date": "2023-09-18T00:00:21.350Z"
+  },
+  "__v": 0,
+  "affecte": "",
+  "updated": {
+    "$date": "2023-09-20T14:15:19.390Z"
+  },
+  "dateouverturedossier": {
+    "$numberLong": "1695219318581"
+  }
+}]
