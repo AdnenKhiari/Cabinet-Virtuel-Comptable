@@ -1,0 +1,27 @@
+img {
+  width: 50px;
+}
+
+.outer {
+  width: 500px;
+}
+
+.red {
+  background-color: var(--main-bg-color);
+}
+
+.danger {
+  color: white;
+  background: red;
+}
+
+.success {
+  color: white;
+  background: green;
+}
+
+.info {
+  background: white;
+  color: black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
