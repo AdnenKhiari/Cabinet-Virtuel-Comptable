@@ -1,0 +1,11 @@
+<div class="suivi-echeances-container">
+  <h2>Suivi des Échéances Fiscales</h2>
+  <ul>
+    <li *ngFor="let echeance of echeances" class="echeance-item">
+      <span class="date">Date limite:</span>
+      {{ echeance.date }} -
+      <span class="type">Type:</span>
+      {{ echeance.type }}
+    </li>
+  </ul>
+</div>
