@@ -1,0 +1,131 @@
+<div class="container-fluid">
+  <h2 class="title">Liste des Déclarations Fiscales</h2>
+  <div class="ma-table">
+    <table>
+      <thead class="header">
+        <th>Matricule fiscale</th>
+        <th>Date</th>
+        <th>Nature</th>
+        <th>Déposé par</th>
+        <th>Action</th>
+      </thead>
+      <tr *ngFor="let declaration of listDeclarations">
+        <td>{{ declaration.matriculefiscale }}</td>
+        <td>{{ declaration.created }}</td>
+        <td>{{ declaration.nature }}</td>
+        <td>{{ declaration.lastname }}</td>
+        <td class="action"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="ajouter">
+    <button data-bs-toggle="modal" data-bs-target="#addDeclarationModal" class="btn btn-warning">
+      Ajouter une déclaration
+    </button>
+  </div>
+</div>
+
+<!-- Modal to add a declaration-->
+<div
+  class="modal fade"
+  id="addDeclarationModal"
+  tabindex="-1"
+  aria-labelledby="addDeclarationModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="addDeclarationModalLabel">Ajouter une déclaration</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="addDeclarationForm" (ngSubmit)="onSubmitAdd()">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="prenom" class="col-form-label">Matricule Fiscale</label>
+            <input
+              type="text"
+              class="form-control"
+              id="matriculeFiscale"
+              formControlName="matriculeFiscale" />
+          </div>
+          <div class="mb-3">
+            <label for="prenom" class="col-form-label">Prénom</label>
+            <input type="text" class="form-control" id="prenom" formControlName="firstname" />
+          </div>
+
+          <div class="mb-3">
+            <label for="nom" class="col-form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" formControlName="lastname" />
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="col-form-label">Adresse</label>
+            <input type="text" class="form-control" id="address" formControlName="address" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal to edit a declaration-->
+<div
+  class="modal fade"
+  id="editDeclarationModal"
+  tabindex="-1"
+  aria-labelledby="editDeclarationModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="editDeclarationModalLabel">Modifier une déclaration</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form
+        *ngIf="updateDeclarationForm"
+        [formGroup]="updateDeclarationForm"
+        (ngSubmit)="onSubmitUpdate()">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="prenom" class="col-form-label">Matricule Fiscale</label>
+            <input
+              type="text"
+              class="form-control"
+              id="matriculeFiscale"
+              formControlName="matriculeFiscale" />
+          </div>
+          <div class="mb-3">
+            <label for="prenom" class="col-form-label">Prénom</label>
+            <input
+              type="text"
+              class="form-control"
+              id="prenom"
+              formControlName="firstname"
+              value="" />
+          </div>
+          <div class="mb-3">
+            <label for="nom" class="col-form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" formControlName="lastname" value="" />
+          </div>
+          <div class="mb-3">
+            <label for="address" class="col-form-label">Adresse</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              formControlName="address"
+              value="" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
