@@ -1,4 +1,10 @@
-<div [class]="type" class="outer">
-  <img [src]="icon" />
-  <p>{{ message }}</p>
+<button (click)="toggleVisibility()">Toggle</button>
+
+<div [hidden]="isHidden">
+  <div [class]="type" class="outer">
+    <img [src]="icon" />
+    {{ message }}
+  </div>
 </div>
+
+<br />

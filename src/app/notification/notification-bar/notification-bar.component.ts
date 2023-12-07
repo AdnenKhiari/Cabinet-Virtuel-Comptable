@@ -10,6 +10,12 @@ export class NotificationBarComponent implements OnInit {
   @Input() icon!: String
   @Input() type!: String
 
+  isHidden = true
+
+  toggleVisibility() {
+    this.isHidden = !this.isHidden
+  }
+
   constructor() {}
 
   ngOnInit() {
