@@ -44,7 +44,7 @@ export class SuiviEcheancesFiscalesComponent implements OnInit {
     const currentDate = new Date()
     const monthIndex = currentDate.getMonth()
     this.selectedMonth = this.months[monthIndex]
-    this.toggleWeeks(this.selectedMonth)
+    this.showWeeks[this.selectedMonth] = true
 
     this.echeances = [
       {

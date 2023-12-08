@@ -1,13 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
-* {
-  font-family: Comic Sans MS;
-  font-weight: bold;
-}
-
 .suivi-echeances-container {
   max-width: 80%;
   margin: 0 auto;
+  font-weight: bold;
+  font-family: Comic Sans MS;
 }
 
 .title-options-container {
@@ -43,7 +40,6 @@
       font-size: 14px;
     }
   }
-
 }
 
 .months {
@@ -75,7 +71,7 @@
     .month-name {
       position: absolute;
       color: #3498db;
-      left: 50%;
+      left: 45%;
       margin-bottom: 20px;
     }
 
@@ -120,9 +116,11 @@
 
     .content-echeance {
       border: 1px solid #ccc;
+      font-family: 'Trebuchet MS', sans-serif;
       padding: 10px;
       border-radius: 10px;
-    }
 
+
+    }
   }
 }
