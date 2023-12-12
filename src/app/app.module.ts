@@ -14,6 +14,9 @@ import { ListeFacturesComponent } from './liste-factures/liste-factures.componen
 
 import { SuiviEcheancesFiscalesComponent } from './suivi-echeances-fiscales/suivi-echeances-fiscales.component'
 import { HistoriqueActionsComponent } from './historique-actions/historique-actions.component'
+import { GestionUserComponent } from './gestion-user/gestion-user.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatTabsModule } from '@angular/material/tabs'
 
 @NgModule({
   declarations: [
@@ -21,15 +24,20 @@ import { HistoriqueActionsComponent } from './historique-actions/historique-acti
     ListeDeclarationsFiscalesComponent,
     ListeFacturesComponent,
     SuiviEcheancesFiscalesComponent,
-    HistoriqueActionsComponent
+    HistoriqueActionsComponent,
+    GestionUserComponent
   ],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
     AuthentificationModule,
     NotificationModule,
     ReactiveFormsModule,
-    ReactiveFormsModule
+
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
