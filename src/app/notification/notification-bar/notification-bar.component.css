@@ -1,0 +1,40 @@
+img {
+  width: 40px;
+  margin-right: 40px;
+  margin-left: 10px;
+  filter: invert(1);
+  filter: brightness(400);
+}
+h1 {
+  font-size: 30px;
+}
+.outer {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.danger {
+  color: white;
+  background: red;
+}
+
+.success {
+  color: white;
+  background: green;
+}
+
+.info {
+  background: white;
+  color: black;
+}
+
+button {
+  margin-bottom: 10px;
+}
