@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { NotificationModule } from './notification/notification.module'
+import { NavbarModule } from './navbar/navbar.module'
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NotificationModule],
+  imports: [BrowserModule, AppRoutingModule, NotificationModule, NavbarModule],
   providers: [],
   bootstrap: [AppComponent]
 })
