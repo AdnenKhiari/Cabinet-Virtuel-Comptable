@@ -1,9 +1,11 @@
 <button (click)="toggleVisibility()">Toggle</button>
 
 <div [hidden]="isHidden">
-  <div [class]="type" class="outer">
-    <img [src]="icon" />
-    {{ message }}
+  <div class="outer">
+    <div class="icon_wrapper" [class]="type">
+      <img [src]="icon" />
+    </div>
+    <div class="message_wrapper">{{ message }}</div>
   </div>
 </div>
 
