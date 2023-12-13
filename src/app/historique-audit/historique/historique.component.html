@@ -1,0 +1,18 @@
+<div *ngFor="let history of histories" class="history">
+  <div class="history__header">
+    <div class="history__header__title">
+      <h3>{{ history.action }}</h3>
+    </div>
+    <div class="history__header__date">
+      <p>{{ history.date | date: 'dd/MM/yyyy' }}</p>
+    </div>
+  </div>
+  <div class="history__content">
+    <div class="history__content__description">
+      <p>{{ history.description }}</p>
+    </div>
+    <div class="history__content__actions">
+      <button color="primary">Edit</button>
+      <button color="warn">Delete</button>
+    </div>
+  </div>

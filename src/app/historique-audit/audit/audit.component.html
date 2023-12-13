@@ -1,0 +1,18 @@
+<div *ngFor="audits; let audit" class="audit">
+  <div class="audit__header">
+    <div class="audit__header__title">
+      <h3>{{ audit.title }}</h3>
+    </div>
+    <div class="audit__header__date">
+      <p>{{ audit.date | date: 'dd/MM/yyyy' }}</p>
+    </div>
+  </div>
+  <div class="audit__content">
+    <div class="audit__content__description">
+      <p>{{ audit.description }}</p>
+    </div>
+    <div class="audit__content__actions">
+      <button color="primary">Edit</button>
+      <button color="warn">Delete</button>
+    </div>
+  </div>
