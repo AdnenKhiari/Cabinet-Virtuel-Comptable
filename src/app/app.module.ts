@@ -3,16 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GenerationRapportComponent } from './generation-rapport/generation-rapport.component';
+// Import pdfmake and vfs_fonts
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GenerationRapportComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
