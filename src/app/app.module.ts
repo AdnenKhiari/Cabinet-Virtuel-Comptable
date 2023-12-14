@@ -8,10 +8,12 @@ import { AuthentificationModule } from './authentification/authentification.modu
 import { LoginComponent } from './authentification/login/login.component'
 import { SignUpComponent } from './authentification/sign-up/sign-up.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
+import { FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [AppComponent, ListeClientsComponent],
-  imports: [BrowserModule, AppRoutingModule, AuthentificationModule],
+  imports: [BrowserModule, AppRoutingModule, AuthentificationModule, FormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]
 })
