@@ -6,9 +6,10 @@ import { AppComponent } from './app.component'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
 
 import { ReactiveFormsModule } from '@angular/forms'
+import { ConfigurationComponent } from './configuration/configuration.component'
 
 @NgModule({
-  declarations: [AppComponent, ListeFacturesComponent],
+  declarations: [AppComponent, ListeFacturesComponent, ConfigurationComponent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
