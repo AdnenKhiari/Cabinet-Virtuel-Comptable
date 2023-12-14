@@ -19,12 +19,14 @@ import { HistoriqueActionsComponent } from './historique-actions/historique-acti
 import { GestionUserComponent } from './gestion-user/gestion-user.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatTabsModule } from '@angular/material/tabs'
+import { ConfigurationComponent } from './configuration/configuration.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeDeclarationsFiscalesComponent,
     ListeFacturesComponent,
+    ConfigurationComponent,
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
     GestionUserComponent
