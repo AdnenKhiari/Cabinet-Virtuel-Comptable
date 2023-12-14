@@ -8,6 +8,8 @@ import { AuthentificationModule } from './authentification/authentification.modu
 import { LoginComponent } from './authentification/login/login.component'
 import { SignUpComponent } from './authentification/sign-up/sign-up.component'
 import { NotificationModule } from './notification/notification.module'
+import { NavbarModule } from './navbar/navbar.module'
+import { SaisieComptableModule } from './saisie-comptable/saisie-comptable.module'
 import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
@@ -38,6 +40,14 @@ import { MatTabsModule } from '@angular/material/tabs'
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatTabsModule
+  ],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NotificationModule,
+    NavbarModule,
+    SaisieComptableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
