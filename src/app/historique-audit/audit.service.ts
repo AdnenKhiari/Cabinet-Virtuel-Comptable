@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Audit } from '../models/historique-audit';
 import { BACKEND_URL } from '../constants/url';
-import { Observable } from 'rxjs';
+import { Observable,of } from 'rxjs';
+import {auditFakeData} from '../constants/historique-audit'
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,8 @@ export class AuditService {
   constructor(private http: HttpClient) { }
 
   getAudit() :Observable<Audit[]>{
-    return this.http.get<Audit[]>(`${BACKEND_URL}/audit`)
+    // return this.http.get<Audit[]>(`${BACKEND_URL}/audit`)
+    return of(auditFakeData)
   }
 
   getAuditById(id: number):Observable<Audit> {

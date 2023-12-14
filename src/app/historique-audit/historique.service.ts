@@ -2,7 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BACKEND_URL } from "../constants/url";
 import { Historique } from '../models/historique-audit';
-import { Observable } from 'rxjs';
+import { Observable,of } from 'rxjs';
+import { historiqueFakeData } from '../constants/historique-audit';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,8 @@ export class HistoriqueService {
   constructor(private http: HttpClient) { }
 
   getHistorique():Observable<Historique[]> {
-    return this.http.get<Historique[]>(`${BACKEND_URL}/historique`)
+    // return this.http.get<Historique[]>(`${BACKEND_URL}/historique`)
+    return of(historiqueFakeData)
   }
 
   getHistoriqueById(id: number):Observable<Historique> {

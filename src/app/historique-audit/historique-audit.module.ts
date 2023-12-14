@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AuditComponent } from './audit/audit.component';
 import { HistoriqueComponent } from './historique/historique.component';
 import { AuditService } from './audit.service';
+import { HistoriqueAuditRoutingModule } from './historique-audit-routing.module';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { AuditService } from './audit.service';
   ],
   providers: [AuditService],
   imports: [
+    HistoriqueAuditRoutingModule,
     CommonModule
   ]
 })

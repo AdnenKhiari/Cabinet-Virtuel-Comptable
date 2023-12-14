@@ -1,7 +1,7 @@
-<div *ngFor="audits; let audit" class="audit">
+<div *ngFor="let audit of audits" class="audit">
   <div class="audit__header">
     <div class="audit__header__title">
-      <h3>{{ audit.title }}</h3>
+      <h3>{{ audit.action }}</h3>
     </div>
     <div class="audit__header__date">
       <p>{{ audit.date | date: 'dd/MM/yyyy' }}</p>
