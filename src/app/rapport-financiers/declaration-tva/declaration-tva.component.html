@@ -1,0 +1,27 @@
+<h2>Déclaration de TVA</h2>
+
+<table>
+<thead>
+<tr>
+    <th>Période</th>
+    <th>CA Taxable</th>
+    <th>Achats Déductibles</th>
+    <th>TVA à payer/rembourser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Mois en cours</td>
+    <td>{{ declarationtvaData.caTaxableCourant }}</td>
+    <td>{{ declarationtvaData.achatsDeductiblesCourants }}</td>
+    <td>{{ declarationtvaData.tvaAPayerRembourserCourant }}</td>
+</tr>
+<tr>
+    <td>Total depuis le début de l'année</td>
+    <td>{{ declarationtvaData.caTaxableCumulé }}</td>
+    <td>{{ declarationtvaData.achatsDeductiblesCumulés }}</td>
+    <td>{{ declarationtvaData.tvaAPayerRembourserCumulé }}</td>
+</tr>
+</tbody>
+</table>
+
