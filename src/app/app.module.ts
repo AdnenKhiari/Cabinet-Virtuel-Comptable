@@ -31,18 +31,13 @@ import { MatTabsModule } from '@angular/material/tabs'
   ],
   imports: [
     BrowserModule,
-
     AppRoutingModule,
     AuthentificationModule,
     NotificationModule,
     ReactiveFormsModule,
-
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatTabsModule
-  ],
-  declarations: [AppComponent],
-  imports: [
+    MatTabsModule,
     BrowserModule,
     AppRoutingModule,
     NotificationModule,
