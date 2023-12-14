@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
 img {
   width: 40px;
-  margin-right: 40px;
-  margin-left: 10px;
   filter: invert(1);
   filter: brightness(400);
 }
@@ -9,30 +13,46 @@ h1 {
   font-size: 30px;
 }
 .outer {
-  width: 300px;
-  padding: 10px;
   margin: 10px;
+  width: 400px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon_wrapper {
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .danger {
+  padding: 5px 25px;
   color: white;
   background: red;
 }
 
 .success {
+  padding: 5px 25px;
   color: white;
   background: green;
 }
 
 .info {
-  background: white;
   color: black;
+  text-align: center;
+  height: 25px;
+  width: 0px;
+}
+
+.message_wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 10px 40px;
 }
 
 button {

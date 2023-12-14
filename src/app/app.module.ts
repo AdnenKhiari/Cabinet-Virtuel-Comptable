@@ -16,6 +16,8 @@ import {MatTableModule} from '@angular/material/table';
 import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component';
 
 import { NotificationModule } from './notification/notification.module'
+import { NavbarModule } from './navbar/navbar.module'
+import { SaisieComptableModule } from './saisie-comptable/saisie-comptable.module'
 import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
@@ -25,12 +27,14 @@ import { HistoriqueActionsComponent } from './historique-actions/historique-acti
 import { GestionUserComponent } from './gestion-user/gestion-user.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatTabsModule } from '@angular/material/tabs'
+import { ConfigurationComponent } from './configuration/configuration.component'
 
 @NgModule({
     declarations: [
         AppComponent,
         ListeDeclarationsFiscalesComponent,
         ListeFacturesComponent,
+        ConfigurationComponent,
         SuiviEcheancesFiscalesComponent,
         HistoriqueActionsComponent,
         GestionUserComponent
@@ -46,6 +50,11 @@ import { MatTabsModule } from '@angular/material/tabs'
         ReactiveFormsModule,
         BrowserAnimationsModule,
         MatTabsModule,
+        BrowserModule,
+        AppRoutingModule,
+        NotificationModule,
+        NavbarModule,
+        SaisieComptableModule,
         TableauDeBordComponent,
         ImpressionsDocumentsListComponent
     ]
