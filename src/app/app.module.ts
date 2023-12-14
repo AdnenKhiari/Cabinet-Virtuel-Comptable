@@ -14,13 +14,13 @@ import { CharteEcartRevenuesChargesComponent } from './charte-ecart-revenues-cha
 import { RevenuesClientsComponent } from './revenues-clients/revenues-clients.component';
 import {MatTableModule} from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component';
 
 
 @NgModule({
     declarations: [AppComponent],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [BrowserModule,CanvasJSAngularChartsModule, AppRoutingModule, AuthentificationModule, TableauDeBordComponent, CharteChargesComponent,MatTableModule, BrowserAnimationsModule],
-   
+    imports: [BrowserModule, CanvasJSAngularChartsModule, AppRoutingModule, AuthentificationModule, TableauDeBordComponent, CharteChargesComponent, MatTableModule, BrowserAnimationsModule, ImpressionsDocumentsListComponent]
 })
 export class AppModule {}
