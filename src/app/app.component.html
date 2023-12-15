@@ -1,3 +1,12 @@
-<h1>Projet Comptable</h1>
+<app-notification></app-notification>
 
-<app-login></app-login>
+<h1>Angular 6 notification service</h1>
+<p>Simple notification service implementation :)</p>
+
+<button mat-raised-button color="basic" (click)="sendInfo()">Info</button>
+<button mat-raised-button color="primary" (click)="sendSuccess()">Success</button>
+<button mat-raised-button color="accent" (click)="sendWarning()">Warning</button>
+<button mat-raised-button color="warn" (click)="sendError()">Error</button>
+
+<br />
+<button mat-raised-button color="warn" (click)="loremIpsum()">Lorem Ipsum</button>
