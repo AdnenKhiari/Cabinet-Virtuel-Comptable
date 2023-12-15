@@ -14,7 +14,7 @@ export class CommentService {
     return this.http.post<any>(`${this.apiUrl}/files/${fileId}/comments`, commentData)
   }
 
-  updateComment(fileId: number, commentId: number, commentData: any): Observable<any> {
+  updateComment(fileId: number, commentId: number, commentData: string): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/files/${fileId}/comments/${commentId}`, commentData)
   }
 
