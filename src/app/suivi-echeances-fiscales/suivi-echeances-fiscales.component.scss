@@ -5,6 +5,10 @@
   margin: 0 auto;
   font-weight: bold;
   font-family: Comic Sans MS;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .title-options-container {
@@ -82,7 +86,7 @@
       top: 160%;
       left: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       background-color: #fff;
     }
   }
@@ -121,6 +125,54 @@
       border-radius: 10px;
 
 
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-options-container {
+    flex-direction: column;
+
+    .component-title {
+      text-align: center;
+    }
+  }
+
+  .header-options {
+    flex-direction: column;
+
+
+    div {
+      margin-bottom: 10px;
+
+      label {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      select,
+      input {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .months {
+    flex-direction: column;
+
+    .month {
+      margin-bottom: 20px;
+
+      .month-name {
+        display: none;
+      }
+
+      .weeks {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+      }
     }
   }
 }
