@@ -1,0 +1,17 @@
+/* notification.component.css */
+.success {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .error {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .info {
+    background-color: #2196f3; /* Blue */
+    color: white;
+  }
+  
+  

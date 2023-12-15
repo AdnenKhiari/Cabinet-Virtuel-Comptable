@@ -1,0 +1,8 @@
+<!-- notification.component.html -->
+
+<div *ngFor="let notification of notifications; let i = index" [ngClass]="notification.type">
+    {{ notification.message }}
+    <!-- Show close button for error and info notifications -->
+    <button *ngIf="notification.type !== 'success'" (click)="closeNotification(i)">Close</button>
+</div>
+  
