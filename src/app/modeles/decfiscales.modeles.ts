@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-types */
 export class DecFiscale {
   public firstname: String = ''
   public lastname: String = ''
