@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "6553eb070367c8343e61eb6d"
+  },
+  "libelle": "appel",
+  "duree": "",
+  "created": {
+    "$date": "2023-11-14T21:47:51.795Z"
+  },
+  "__v": 0,
+  "updated": {
+    "$date": "2023-11-14T21:57:12.957Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6555d2f7f274f647a4ece39a"
+  },
+  "libelle": "facturation des conseils fiscales",
+  "duree": "180",
+  "created": {
+    "$date": "2023-11-16T08:29:43.656Z"
+  },
+  "__v": 0,
+  "updated": {
+    "$date": "2023-11-16T08:51:56.394Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6555d2f8f274f647a4ece39d"
+  },
+  "libelle": "contacter le client",
+  "duree": "310",
+  "created": {
+    "$date": "2023-11-16T08:29:44.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6555d3d7f274f647a4ece3b0"
+  },
+  "libelle": "reintegration des documents",
+  "duree": "",
+  "created": {
+    "$date": "2023-11-16T08:33:27.242Z"
+  },
+  "__v": 0
+}]
