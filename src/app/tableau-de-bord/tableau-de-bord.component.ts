@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 import { Component } from '@angular/core'
 import { CharteChargesComponent } from '../charte-charges/charte-charges.component'
 import { CharteEcartRevenuesChargesComponent } from '../charte-ecart-revenues-charges/charte-ecart-revenues-charges.component'
