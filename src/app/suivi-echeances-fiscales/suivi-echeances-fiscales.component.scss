@@ -13,15 +13,23 @@
   display: flex;
   justify-content: space-between;
   background-color: #f6f6f6;
+  margin-top: 30px;
   margin-bottom: 10px;
+  height: 70px;
   border: solid 1px rgb(140, 140, 140);
   border-radius: 10px;
 }
 
 .component-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
 }
 
 .header-options {
@@ -74,6 +82,7 @@
       position: absolute;
       color: #3498db;
       left: 45%;
+      top: 120%;
       margin-bottom: 20px;
     }
 
