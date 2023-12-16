@@ -1,3 +1,4 @@
+
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 import { Component } from '@angular/core'
 import { CharteChargesComponent } from '../charte-charges/charte-charges.component'

@@ -7,7 +7,7 @@ import { CharteChargesComponent } from './charte-charges/charte-charges.componen
 import { CharteEcartRevenuesChargesComponent } from './charte-ecart-revenues-charges/charte-ecart-revenues-charges.component'
 import { RevenuesClientsComponent } from './revenues-clients/revenues-clients.component'
 import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component'
-
+import { ForgotPasswordComponent } from './authentification/forgot-password/forgot-password.component'
 import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
 import { SuiviEcheancesFiscalesComponent } from './suivi-echeances-fiscales/suivi-echeances-fiscales.component'
@@ -19,6 +19,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   { path: 'Signup', component: SignUpComponent },
+  { path: 'forget-password', component: ForgotPasswordComponent },
   { path: 'tableau-de-bord', component: TableauDeBordComponent },
   { path: 'charte-charges', component: CharteChargesComponent },
   { path: 'RevenuesClients', component: RevenuesClientsComponent },
