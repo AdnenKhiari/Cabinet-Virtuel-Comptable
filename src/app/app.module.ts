@@ -10,10 +10,19 @@ import { SignUpComponent } from './authentification/sign-up/sign-up.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { GestionComptesComponent } from './gestion-comptes/gestion-comptes.component'
+import { MatTabsModule } from '@angular/material/tabs'
 
 @NgModule({
-  declarations: [AppComponent, ListeClientsComponent],
-  imports: [BrowserModule, AppRoutingModule, AuthentificationModule, FormsModule, NgbModule],
+  declarations: [AppComponent, ListeClientsComponent, GestionComptesComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AuthentificationModule,
+    FormsModule,
+    NgbModule,
+    MatTabsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
