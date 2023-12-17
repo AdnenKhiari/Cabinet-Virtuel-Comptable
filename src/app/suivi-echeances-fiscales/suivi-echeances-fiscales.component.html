@@ -2,7 +2,9 @@
 
 <div class="suivi-echeances-container">
   <div class="title-options-container">
-    <h2 class="component-title">Suivi des Échéances Fiscales</h2>
+    <div class="component-title">
+      <h2>Suivi des Échéances Fiscales</h2>
+    </div>
 
     <div class="header-options">
       <div>
@@ -33,7 +35,6 @@
     </div>
   </div>
 
-  <!-- Display Months -->
   <div class="months">
     <div *ngFor="let month of months" class="month">
       <span (click)="toggleWeeks(month)" [ngClass]="{ selected: selectedMonth === month }">
@@ -44,14 +45,17 @@
         <div class="weeks">
           <div *ngFor="let week of weeks" class="week">
             <div class="week-header">Semaine {{ week }}</div>
-            <div *ngFor="let echeance of echeances" class="echeance">
-              <div class="date-echeance">{{ echeance.date }}</div>
-              <div class="content-echeance">
-                <div>{{ echeance.type }}</div>
-                <div>{{ echeance.description }}</div>
-                <div>{{ echeance.status }}</div>
+
+            <ng-container *ngFor="let echeance of getEcheancesForMonth(month)">
+              <div *ngIf="getWeekNumber(echeance.date.getDate()) === week" class="echeance">
+                <div class="date-echeance">{{ echeance.date | date: 'yyyy-MM-dd' }}</div>
+                <div class="content-echeance">
+                  <div>{{ echeance.type }}</div>
+                  <div>{{ echeance.description }}</div>
+                  <div>{{ echeance.status }}</div>
+                </div>
               </div>
-            </div>
+            </ng-container>
           </div>
         </div>
       </div>
