@@ -1,4 +1,4 @@
-<h1>Cabinet Comptable Virtuel</h1>
+<h1 class="text-center">Cabinet Comptable Virtuel</h1>
 <br />
 <br />
 <div class="row">
@@ -8,22 +8,37 @@
         <form>
           <div class="form-group">
             <label for="email">Email :</label>
-            <input type="text" name="email" class="form-control" placeholder="Email" />
+            <input
+              type="text"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+              [(ngModel)]="email" />
           </div>
           <div class="form-group">
             <label for="password">Password :</label>
-            <input type="password" name="password" class="form-control" placeholder="********" />
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              placeholder="********"
+              [(ngModel)]="password" />
             <div class="text-right forget-pass">
-              <a routerLink="/forget-password">Forget Password ?</a>
+              <a routerLink="forgotpwd">Forgot Password?</a>
             </div>
           </div>
-          <div class="text-center">
-            <input type="submit" class="btn btn-my" value="Login" />
+          <div class="text-center mt-2 mb-2">
+            <input
+              type="submit"
+              class="btn btn-primary"
+              value="Login"
+              (click)="$event.preventDefault(); login()" />
           </div>
+          <div class="text-center mt-2 mb-2" *ngIf="isAuthenticated$ | async">Authenticated</div>
         </form>
         <div class="text-center sign-up">
-          Don`t have an account ?
-          <a routerLink="/sign-up">Sign Up</a>
+          Don't have an account?
+          <a routerLink="signup">Sign Up</a>
           here.
         </div>
       </div>
