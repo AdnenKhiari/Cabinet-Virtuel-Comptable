@@ -4,50 +4,111 @@
       <div class="card-body auth-card">
         <form>
           <div class="form-group">
-            <label for="name">First Name :</label>
-            <input type="text" name="name" class="form-control" placeholder="First Name" />
+            <label for="firstname">First Name :</label>
+            <input
+              type="text"
+              name="firstname"
+              class="form-control"
+              placeholder="First Name"
+              [(ngModel)]="firstName" />
           </div>
           <div class="form-group dj-danger">
-            <label for="name">Last Name :</label>
-            <input type="text" name="name" class="form-control" placeholder="Last Name" />
+            <label for="lastname">Last Name :</label>
+            <input
+              type="text"
+              name="lastname"
+              class="form-control"
+              placeholder="Last Name"
+              [(ngModel)]="lastName" />
           </div>
 
           <div class="form-group">
             <label for="phone">Phone :</label>
-            <input type="text" name="phone" class="form-control" placeholder="Phone" />
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              placeholder="Phone"
+              [(ngModel)]="phone" />
           </div>
           <div class="form-group">
             <label for="email">Email :</label>
-            <input type="text" name="email" class="form-control" placeholder="Email" />
+            <input
+              type="text"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+              [(ngModel)]="email" />
           </div>
           <div class="form-group">
             <label for="password">Password :</label>
-            <input type="password" name="password" class="form-control" placeholder="********" />
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              placeholder="********"
+              [(ngModel)]="password" />
           </div>
           <div class="form-group">
             <label for="c_password">Confirm Password :</label>
-            <input type="password" name="c_password" class="form-control" placeholder="********" />
+            <input
+              type="password"
+              name="c_password"
+              class="form-control"
+              placeholder="********"
+              [(ngModel)]="confirmPassword" />
           </div>
           <div class="form-group">
-            <label for="name">Civilité :</label>
-            <input type="text" name="name" class="form-control" placeholder="Votre Civilité" />
+            <label for="civilite">Civilité :</label>
+            <input
+              type="text"
+              name="civilite"
+              class="form-control"
+              placeholder="Votre Civilité"
+              [(ngModel)]="civilite" />
           </div>
           <div class="form-group">
-            <label for="name">Fonction :</label>
-            <input type="text" name="name" class="form-control" placeholder="Votre Fonction" />
+            <label for="fonction">Fonction :</label>
+            <input
+              type="text"
+              name="fonction"
+              class="form-control"
+              placeholder="Votre Fonction"
+              [(ngModel)]="fonction" />
           </div>
           <div class="form-group">
-            <label for="name">Secteur :</label>
-            <input type="text" name="name" class="form-control" placeholder="Secteur d'Activité" />
+            <label for="secteur">Secteur :</label>
+            <input
+              type="text"
+              name="secteur"
+              class="form-control"
+              placeholder="Secteur d'Activité"
+              [(ngModel)]="secteur" />
           </div>
           <div class="form-group">
-            <label for="name">Nom Société :</label>
-            <input type="text" name="name" class="form-control" placeholder="Société" />
+            <label for="societe">Nom Société :</label>
+            <input
+              type="text"
+              name="societe"
+              class="form-control"
+              placeholder="Société"
+              [(ngModel)]="societe" />
+          </div>
+          <div class="text-center mt-2 mb-2">
+            <input
+              type="submit"
+              class="btn btn-primary"
+              value="Signup"
+              (click)="$event.preventDefault(); signup()" />
           </div>
           <div class="text-center login">
             Already have an account ?
-            <a routerLink="/login">Login</a>
+            <a routerLink="">Login</a>
             here.
+          </div>
+          <div class="text-center mt-3 mb-3" *ngIf="isAuthenticated$ | async">
+            <div>Authenticated</div>
+            <div>{{ userString$ | async }}</div>
           </div>
         </form>
       </div>

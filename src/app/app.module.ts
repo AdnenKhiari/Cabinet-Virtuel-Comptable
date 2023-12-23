@@ -6,8 +6,6 @@ import { AppComponent } from './app.component'
 
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 import { AuthentificationModule } from './authentification/authentification.module'
-import { LoginComponent } from './authentification/login/login.component'
-import { SignUpComponent } from './authentification/sign-up/sign-up.component'
 import { TableauDeBordComponent } from './tableau-de-bord/tableau-de-bord.component'
 import { CharteChargesComponent } from './charte-charges/charte-charges.component'
 import { CharteEcartRevenuesChargesComponent } from './charte-ecart-revenues-charges/charte-ecart-revenues-charges.component'
@@ -32,6 +30,10 @@ import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
+import { StoreModule } from '@ngrx/store'
+import { EffectsModule } from '@ngrx/effects'
+import { StoreDevtoolsModule } from '@ngrx/store-devtools'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,21 +50,29 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthentificationModule,
     NotificationModule,
-    ReactiveFormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    BrowserModule,
-    AppRoutingModule,
-    NotificationModule,
     NavbarModule,
     SaisieComptableModule,
     TableauDeBordComponent,
     ImpressionsDocumentsListComponent,
     FormsModule,
-    NgbModule
+    NgbModule,
+    AuthentificationModule,
+    StoreModule.forRoot({}),
+    EffectsModule.forRoot(),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: false,
+      autoPause: true
+    }),
+    CanvasJSAngularChartsModule,
+    CharteChargesComponent,
+    CharteEcartRevenuesChargesComponent,
+    RevenuesClientsComponent,
+    MatTableModule
   ]
 })
 export class AppModule {}
