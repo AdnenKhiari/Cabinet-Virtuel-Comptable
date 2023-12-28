@@ -1,0 +1,23 @@
+1)Installation de ngrx/store
+npm install @ngrx/store --save
+2)Installation de ngrx/effects 
+npm install @ngrx/effects --save
+3) Installation de ngrx/store-devtools (facultatif, pour les outils de développement) 
+npm install @ngrx/store-devtools --save
+4)Configuration dans votre application Angular :
+Dans votre app.module.ts :
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+5)Utilisation de ngrx dans vos composants/services :
+import { Store } from '@ngrx/store';
+
+export class AppComponent {
+  count$ = this.store.select('count');
+
+  constructor(private store: Store) {}
+
+  increment() {
+    this.store.dispatch(increment());
+  }
+}

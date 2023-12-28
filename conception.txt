@@ -1,0 +1,122 @@
+### Phase de Conception :
+
+#### 1. Analyse des Besoins :
+**Acteurs du Système :**
+- Clients
+- Manager
+- Senior
+- Comptable
+**États Possibles pour Chaque Entité :**
+- **Client :**
+  - Non inscrit/Non identifié
+  - Inscrit/Identifié
+  - Saisie en cours
+  - Saisie terminée
+- **Manager :**
+  - En attente de réponse client
+  - En attente de suivi senior
+  - En attente de traitement comptable
+  - Supervision en cours
+  - Envoi de réponse client
+  - Transfert au Senior
+- **Senior :**
+  - En attente de réponse manager
+  - En attente de suivi comptable
+  - Supervision en cours
+  - Renvoi au comptable
+- **Comptable :**
+  - En attente de traitement senior
+  - Traitement en cours
+  - Renvoi au Senior
+  - Renvoi au Manager
+**Actions Possibles à Chaque Étape du Workflow :**
+- **Client :**
+  - S'inscrire/Se connecter
+  - Saisir les données
+  - Informer de la fin de la saisie
+
+- **Manager :**
+  - Répondre au client
+  - Transférer au Senior
+
+- **Senior :**
+  - Répondre au Manager
+  - Faire le suivi
+  - Transférer au Comptable
+
+- **Comptable :**
+  - Traiter les informations
+  - Renvoyer au Senior
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 2. Modélisation des Données :
+
+**Modèles de Données :**
+ 
+
+
+
+
+
+
+
+
+
+
+
+#### 3. Définition des Actions :
+
+**Actions :**
+
+import { createAction, props } from '@ngrx/store';
+import { Client } from '../models/client.model';
+
+export const clientRegistered = createAction('[Client] Registered', props<{ client: Client }>());
+export const clientDataEntered = createAction('[Client] Data Entered', props<{ clientId: string }>());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 4. Schématisation du Workflow :
+
+**Diagramme de Séquence :**
+- **Client :**
+  - S'inscrire/Se connecter
+  - Saisir les données
+  - Informer de la fin de la saisie
+
+- **Manager :**
+  - Répondre au client
+  - Transférer au Senior
+
+- **Senior :**
+  - Répondre au Manager
+  - Faire le suivi
+  - Transférer au Comptable
+
+- **Comptable :**
+  - Traiter les informations
+  - Renvoyer au Senior
