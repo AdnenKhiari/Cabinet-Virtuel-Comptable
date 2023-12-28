@@ -1,22 +1,12 @@
+<app-navbar></app-navbar>
+<h1>Navbar</h1>
+<h1>________________________</h1>
+
 <h1>Saisie comptable</h1>
 <app-saisie-comptable></app-saisie-comptable>
 <h1>________________________</h1>
 
-<h1>Navbar</h1>
-<app-navbar></app-navbar>
-<h1>________________________</h1>
-
 <h1>Notification bars</h1>
 <app-notification-bar
-  [message]="'ERROR MSG'"
-  [type]="'danger'"
-  [icon]="
-    'https://static.vecteezy.com/system/resources/thumbnails/012/042/294/small/warning-sign-icon-transparent-background-free-png.png'
-  "></app-notification-bar>
-<app-notification-bar
-  [message]="'SUCCESS MSG'"
-  [type]="'success'"
-  [icon]="
-    'https://cdn1.iconfinder.com/data/icons/basic-ui-elements-black-round-line/304782/21-512.png'
-  "></app-notification-bar>
-<app-notification-bar [message]="'INFOMSG'" [type]="'info'"></app-notification-bar>
+  *ngFor="let notif of notifications"
+  [notification]="notif"></app-notification-bar>
