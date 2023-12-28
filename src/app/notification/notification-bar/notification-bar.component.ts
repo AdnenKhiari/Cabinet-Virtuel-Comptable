@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
+import { NotificationBarModel } from './notification-bar.component.model'
 
 @Component({
   selector: 'app-notification-bar',
@@ -6,23 +7,15 @@ import { Component, Input, OnInit } from '@angular/core'
   styleUrls: ['./notification-bar.component.css']
 })
 export class NotificationBarComponent implements OnInit {
-  @Input() message!: String
-  @Input() icon!: String
-  @Input() type!: String
+  @Input() notification!: NotificationBarModel
 
-  isHidden = true
+  ngOnInit() {
+    this.notification.isHidden = true
+  }
 
   toggleVisibility() {
-    this.isHidden = !this.isHidden
+    this.notification.isHidden = !this.notification.isHidden
   }
 
   constructor() {}
-
-  ngOnInit() {
-    // USE IF ICON == NULL
-    // this.icon
-    //   ? this.icon
-    //   : (this.icon =
-    //       'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/2048px-Flat_cross_icon.svg.png')
-  }
 }
