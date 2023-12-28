@@ -11,9 +11,10 @@ import { NotificationModule } from './notification/notification.module'
 import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
-
 import { SuiviEcheancesFiscalesComponent } from './suivi-echeances-fiscales/suivi-echeances-fiscales.component'
 import { HistoriqueActionsComponent } from './historique-actions/historique-actions.component'
+import { NavbarModule } from './navbar/navbar.module'
+import { SaisieComptableModule } from './saisie-comptable/saisie-comptable.module'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { HistoriqueActionsComponent } from './historique-actions/historique-acti
     AuthentificationModule,
     NotificationModule,
     ReactiveFormsModule,
-    ReactiveFormsModule
+    NotificationModule,
+    NavbarModule,
+    SaisieComptableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
