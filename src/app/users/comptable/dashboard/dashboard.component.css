@@ -1,3 +1,8 @@
+.drawer-parent {
+    width: 100%;
+    position: relative;
+}
+
 .spacer {
     flex: 1 1 auto;
 }
@@ -15,11 +20,11 @@
     padding: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 64px);
+.drawer-container {
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: calc(100vh - 64px);
     margin: 0;
     padding: 0;
 }

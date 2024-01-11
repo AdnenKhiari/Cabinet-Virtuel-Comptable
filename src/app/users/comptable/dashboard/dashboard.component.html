@@ -19,36 +19,40 @@
                 class="item-title">Logout</span></button>
     </mat-menu>
 </p>
-<mat-drawer-container class="container" autosize>
-    <mat-drawer #drawer class="sidenav" mode="side" opened>
-        <mat-list class="list-items">
-            <mat-list-item>
-                <mat-icon matListItemIcon class="list_header_icon" routerLinkActive="active-link">dashboard</mat-icon>
-                <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Dashboard</div>
-            </mat-list-item>
-            <mat-divider class="list-divider"></mat-divider>
-            <a>
-                <mat-list-item routerLink="./overview">
-                    <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">data_usage</mat-icon>
-                    <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Overview</div>
+<div class="drawer-parent">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="side" opened>
+            <mat-list class="list-items">
+                <mat-list-item>
+                    <mat-icon matListItemIcon class="list_header_icon"
+                        routerLinkActive="active-link">dashboard</mat-icon>
+                    <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Dashboard</div>
                 </mat-list-item>
-            </a>
-            <a>
-                <mat-list-item routerLink="./clients">
-                    <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">group</mat-icon>
-                    <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Clients</div>
-                </mat-list-item>
-            </a>
-            <a>
-                <mat-list-item routerLink="./canvas">
-                    <mat-icon matListItemIcon class="sidebar-icon"
-                        routerLinkActive="active-link">fact_checked</mat-icon>
-                    <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Canvas</div>
-                </mat-list-item>
-            </a>
-        </mat-list>
-    </mat-drawer>
-    <div class="sidenav-content">
-        <router-outlet></router-outlet>
-    </div>
-</mat-drawer-container>
+                <mat-divider class="list-divider"></mat-divider>
+                <a>
+                    <mat-list-item routerLink="./overview">
+                        <mat-icon matListItemIcon class="sidebar-icon"
+                            routerLinkActive="active-link">data_usage</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Overview</div>
+                    </mat-list-item>
+                </a>
+                <a>
+                    <mat-list-item routerLink="./clients">
+                        <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">group</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Clients</div>
+                    </mat-list-item>
+                </a>
+                <a>
+                    <mat-list-item routerLink="./canvas">
+                        <mat-icon matListItemIcon class="sidebar-icon"
+                            routerLinkActive="active-link">fact_checked</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Canvas</div>
+                    </mat-list-item>
+                </a>
+            </mat-list>
+        </mat-drawer>
+        <div class="sidenav-content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-container>
+</div>
