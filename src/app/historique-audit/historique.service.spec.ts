@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 
-import { HistoriqueService } from './historique.service';
+import { HistoriqueService } from './historique.service'
 
 describe('HistoriqueService', () => {
-  let service: HistoriqueService;
+  let service: HistoriqueService
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(HistoriqueService);
-  });
+    TestBed.configureTestingModule({})
+    service = TestBed.inject(HistoriqueService)
+  })
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+    expect(service).toBeTruthy()
+  })
+})

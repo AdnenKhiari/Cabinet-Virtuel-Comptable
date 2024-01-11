@@ -1,18 +1,45 @@
-<div *ngFor="let history of histories" class="history">
-  <div class="history__header">
-    <div class="history__header__title">
-      <h3>{{ history.action }}</h3>
+<div class="container p-2 d-flex">
+  <div class="container border rounded p-3">
+    <div class="row history border-bottom">
+      <div class="col-1 fw-bold">
+        <p>ID</p>
+      </div>
+      <div class="col fw-bold">
+        <p>action</p>
+      </div>
+      <div class="col fw-bold">
+        <p>date</p>
+      </div>
+      <div class="col-6 fw-bold">
+        <div>
+          <p>description</p>
+        </div>
+      </div>
+
+      <div class="col-2 fw-bold">
+        <p>actions</p>
+      </div>
     </div>
-    <div class="history__header__date">
-      <p>{{ history.date | date: 'dd/MM/yyyy' }}</p>
+    <div class="row history border-bottom py-2" *ngFor="let history of histories">
+      <div class="col-1">
+        <p class="fw-bold">{{ history.id }}</p>
+      </div>
+      <div class="col">
+        <p class="fw-bold">{{ history.action }}</p>
+      </div>
+      <div class="col history__header__date">
+        <p>{{ history.date | date: 'dd/MM/yyyy' }}</p>
+      </div>
+      <div class="col-6 history__content">
+        <div class="history__content__description text-wrap">
+          <p>{{ history.description }}</p>
+        </div>
+      </div>
+
+      <div class="col-2 d-flex flex-row justify-content-around align-items-center">
+        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-danger" (click)="deleteHistorique(history.id)">Delete</button>
+      </div>
     </div>
   </div>
-  <div class="history__content">
-    <div class="history__content__description">
-      <p>{{ history.description }}</p>
-    </div>
-    <div class="history__content__actions">
-      <button color="primary">Edit</button>
-      <button color="warn">Delete</button>
-    </div>
-  </div>
+</div>

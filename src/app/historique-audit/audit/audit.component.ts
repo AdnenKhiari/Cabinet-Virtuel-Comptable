@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { AuditService } from '../audit.service'
-import { Audit } from 'src/app/models/historique-audit'
+import { Audit } from 'src/app/models/historique-audit.model'
 
 @Component({
   selector: 'app-audit',
@@ -9,28 +9,29 @@ import { Audit } from 'src/app/models/historique-audit'
 })
 export class AuditComponent {
   constructor(private auditService: AuditService) {}
-  audits:Audit[] = []
+  audits: Audit[] = []
+
   ngOnInit() {
-    this.auditService.getAudit().subscribe((data) => {
+    this.auditService.getAudit().subscribe(data => {
       this.audits = data
     })
   }
 
   deleteAudit(id: number) {
     this.auditService.deleteAudit(id).subscribe(() => {
-      this.audits = this.audits.filter((audit) => audit.id !== id)
+      this.audits = this.audits.filter(audit => audit.id !== id)
     })
   }
 
   addAudit(audit: Audit) {
-    this.auditService.addAudit(audit).subscribe((data) => {
+    this.auditService.addAudit(audit).subscribe(data => {
       this.audits.push(data)
     })
   }
 
   updateAudit(audit: Audit) {
-    this.auditService.updateAudit(audit).subscribe((data) => {
-      this.audits = this.audits.map((audit) => {
+    this.auditService.updateAudit(audit).subscribe(data => {
+      this.audits = this.audits.map(audit => {
         if (audit.id === data.id) {
           return data
         }
@@ -40,8 +41,8 @@ export class AuditComponent {
   }
 
   getAuditById(id: number) {
-    this.auditService.getAuditById(id).subscribe((data) => {
-      this.audits = this.audits.filter((audit) => audit.id === id)
+    this.auditService.getAuditById(id).subscribe(data => {
+      this.audits = this.audits.filter(audit => audit.id === id)
     })
   }
 }
