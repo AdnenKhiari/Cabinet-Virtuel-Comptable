@@ -21,8 +21,7 @@
 }
 
 .drawer-container {
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%;
     height: calc(100vh - 64px);
     margin: 0;
