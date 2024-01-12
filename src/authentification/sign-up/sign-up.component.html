@@ -1,0 +1,84 @@
+<form [formGroup]="signUpForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="firstName">First Name :</label>
+      <input type="text" formControlName="firstName" class="form-control" placeholder="First Name" />
+      <div *ngIf="signUpForm.get('firstName').hasError('pattern')">
+        Le prénom doit commencer par une majuscule et contenir uniquement des caractères.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="lastName">Last Name :</label>
+      <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name" />
+      <div *ngIf="signUpForm.get('lastName').hasError('pattern')">
+        Le nom doit commencer par une majuscule et contenir uniquement des caractères.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Phone :</label>
+      <input type="text" formControlName="phone" class="form-control" placeholder="Phone" />
+      <div *ngIf="signUpForm.get('phone').hasError('pattern')">
+        Le numéro de téléphone doit contenir uniquement 8 chiffres.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input type="text" formControlName="email" class="form-control" placeholder="Email" />
+      <div *ngIf="signUpForm.get('email').hasError('email')">
+        Veuillez saisir une adresse e-mail valide.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password :</label>
+      <input type="password" formControlName="password" class="form-control" placeholder="********" />
+      <div *ngIf="signUpForm.get('password').hasError('pattern')">
+        Le mot de passe doit être fort (contenant des caractères spéciaux, une lettre majuscule, etc.).
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="c_password">Confirm Password :</label>
+      <input type="password" formControlName="c_password" class="form-control" placeholder="********" />
+      <div *ngIf="signUpForm.hasError('notMatch')">
+        Les mots de passe ne correspondent pas.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="civilite">Civilité :</label>
+      <input type="text" formControlName="civilite" class="form-control" placeholder="Votre Civilité" />
+    </div>
+  
+    <div class="form-group">
+      <label for="fonction">Fonction :</label>
+      <input type="text" formControlName="fonction" class="form-control" placeholder="Votre Fonction" />
+      <div *ngIf="signUpForm.get('fonction').hasError('pattern')">
+        La fonction doit commencer par une majuscule et contenir uniquement des caractères.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="secteur">Secteur :</label>
+      <input type="text" formControlName="secteur" class="form-control" placeholder="Secteur d'Activité" />
+      <div *ngIf="signUpForm.get('secteur').hasError('pattern')">
+        Le secteur d'activité doit commencer par une majuscule et contenir uniquement des caractères.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="nomSociete">Nom Société :</label>
+      <input type="text" formControlName="nomSociete" class="form-control" placeholder="Société" />
+      <div *ngIf="signUpForm.get('nomSociete').hasError('pattern')">
+        Le nom de la société doit commencer par une majuscule et contenir uniquement des caractères.
+      </div>
+    </div>
+  
+    <div class="text-center login">
+      Already have an account ?
+      <a routerLink="/login">Login</a>
+      here.
+    </div>
+  </form>
