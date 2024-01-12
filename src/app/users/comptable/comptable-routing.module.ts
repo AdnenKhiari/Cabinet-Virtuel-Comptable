@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OverviewComponent } from './overview/overview.component';
-import { CanvasComponent } from './canvas/canvas.component';
-import { ClientsComponent } from './clients/clients.component';
+import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component';
+import { ListeFacturesComponent } from './liste-factures/liste-factures.component';
+import { SaisieComptableComponent } from './saisie-comptable/saisie-comptable.component';
+import { SuiviEcheancesFiscalesComponent } from './suivi-echeances-fiscales/suivi-echeances-fiscales.component';
+import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component';
 
 const routes: Routes = [
   {
@@ -15,8 +18,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: 'overview', component: OverviewComponent },
-      { path: 'canvas', component: CanvasComponent },
-      { path: 'clients', component: ClientsComponent },
+      { path: 'declarations', component: ListeDeclarationsFiscalesComponent },
+      { path: 'factures', component: ListeFacturesComponent },
+      { path: 'saisie', component: SaisieComptableComponent },
+      { path: 'echeance', component: SuiviEcheancesFiscalesComponent },
+      { path: 'documents', component: ImpressionsDocumentsListComponent },
     ]
   }
 ];

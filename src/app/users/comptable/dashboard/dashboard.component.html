@@ -37,22 +37,40 @@
                     </mat-list-item>
                 </a>
                 <a>
-                    <mat-list-item routerLink="./clients">
-                        <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">group</mat-icon>
-                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Clients</div>
+                    <mat-list-item routerLink="./declarations">
+                        <mat-icon matListItemIcon class="sidebar-icon"
+                            routerLinkActive="active-link">account_balance</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Declarations</div>
                     </mat-list-item>
                 </a>
                 <a>
-                    <mat-list-item routerLink="./canvas">
+                    <mat-list-item routerLink="./factures">
                         <mat-icon matListItemIcon class="sidebar-icon"
-                            routerLinkActive="active-link">fact_checked</mat-icon>
-                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Canvas</div>
+                            routerLinkActive="active-link">receipt_long</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Factures</div>
+                    </mat-list-item>
+                </a>
+                <a>
+                    <mat-list-item routerLink="./saisie">
+                        <mat-icon matListItemIcon class="sidebar-icon"
+                            routerLinkActive="active-link">keyboard</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Saisie</div>
+                    </mat-list-item>
+                </a>
+                <a>
+                    <mat-list-item routerLink="./echeance">
+                        <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">event</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Echeances</div>
+                    </mat-list-item>
+                </a>
+                <a>
+                    <mat-list-item routerLink="./documents">
+                        <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">print</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Documents</div>
                     </mat-list-item>
                 </a>
             </mat-list>
         </mat-drawer>
-        <div class="sidenav-content">
-            <router-outlet></router-outlet>
-        </div>
+        <router-outlet class="outlet"></router-outlet>
     </mat-drawer-container>
 </div>

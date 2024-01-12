@@ -1,0 +1,111 @@
+<div class="container-fluid body-with-toolbar mt-5">
+  <h2 class="title">Liste des Factures</h2>
+  <div class="ma-table">
+    <table>
+      <thead class="header">
+        <th>Numéro de Facture</th>
+        <th>Date de Facturation</th>
+        <th>Client</th>
+        <th>Montant Total</th>
+        <th>Statut</th>
+        <th>Action</th>
+      </thead>
+      <!-- <tr *ngFor="let facture of listeFactures"> //en attendant le modele "Factures"
+                    <td>{{facture.numFacture}}</td>
+                    <td>{{facture.dateFacture}}</td>
+                    <td>{{facture.client}}</td>
+                    <td>{{facture.montantTotal}}</td>
+                    <td>{{facture.statut}}</td>
+                </tr> -->
+    </table>
+  </div>
+  <div class="ajouter">
+    <button data-bs-toggle="modal" data-bs-target="#addUserModal" class="btn btn-warning">
+      Ajouter une Facture
+    </button>
+  </div>
+</div>
+
+<!-- Modal to add an user-->
+<div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="addUserModalLabel">Ajouter une Facture</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="numFacture" class="col-form-label">Numéro de Facture:</label>
+            <input type="text" class="form-control" id="numFacture" formControlName="numFacture" />
+          </div>
+          <div class="mb-3">
+            <label for="dateFacturation" class="col-form-label">Date de Facturation:</label>
+            <input type="text" class="form-control" id="dateFacturation" formControlName="dateFacturation" />
+          </div>
+          <div class="mb-3">
+            <label for="client" class="col-form-label">Client :</label>
+            <input type="text" class="form-control" id="client" formControlName="client" />
+          </div>
+          <div class="mb-3">
+            <label for="montantTotal" class="col-form-label">Montant Total :</label>
+            <input type="text" class="form-control" id="montantTotal" formControlName="montantTotal" />
+          </div>
+          <div class="mb-3">
+            <label for="statut" class="col-form-label">Statut :</label>
+            <input type="text" class="form-control" id="statut" formControlName="statut" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            Enregistrer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal to edit an user-->
+<div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="addUserModalLabel">Ajouter une Facture</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="numFacture" class="col-form-label">Numéro de Facture:</label>
+            <input type="text" class="form-control" id="numFacture" formControlName="numFacture" />
+          </div>
+          <div class="mb-3">
+            <label for="dateFacturation" class="col-form-label">Date de Facturation:</label>
+            <input type="text" class="form-control" id="dateFacturation" formControlName="dateFacturation" />
+          </div>
+          <div class="mb-3">
+            <label for="client" class="col-form-label">Client :</label>
+            <input type="text" class="form-control" id="client" formControlName="client" />
+          </div>
+          <div class="mb-3">
+            <label for="montantTotal" class="col-form-label">Montant Total :</label>
+            <input type="text" class="form-control" id="montantTotal" formControlName="montantTotal" />
+          </div>
+          <div class="mb-3">
+            <label for="statut" class="col-form-label">Statut :</label>
+            <input type="text" class="form-control" id="statut" formControlName="statut" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            Enregistrer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
