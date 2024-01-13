@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <h2>Liste Des Clients</h2>
 
-  <button class="btn btn-primary" (click)="open(content)">Ajouter Client</button>
+  <button  *ngIf="authenficatedService.hasRole('admin')"class="btn btn-primary" (click)="open(content)">Ajouter Client</button>
 
   <div *ngIf="errorMessage" class="alert alert-danger mt-3">
     {{ errorMessage }}
@@ -24,9 +24,9 @@
         <td>{{ client.email }}</td>
         <td>{{ client.phoneNumber }}</td>
         <td>
-          <button class="btn btn-info btn-sm" (click)="open(content, client)">Afficher</button>
-          <button class="btn btn-warning btn-sm m-1" (click)="open(content, client)">Editer</button>
-          <button class="btn btn-danger btn-sm" (click)="deleteClient(client)">Supprimer</button>
+          <button  class="btn btn-info btn-sm" (click)="open(content, client)">Afficher</button>
+          <button  *ngIf="authenficatedService.hasRole('admin')"class="btn btn-warning btn-sm m-1" (click)="open(content, client)">Editer</button>
+          <button *ngIf="authenficatedService.hasRole('admin')" class="btn btn-danger btn-sm" (click)="deleteClient(client)">Supprimer</button>
         </td>
       </tr>
     </tbody>
@@ -80,7 +80,7 @@
     <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel click')">
       Close
     </button>
-    <button type="button" class="btn btn-primary" (click)="addOrUpdateClient()">
+    <button *ngIf="authenficatedService.hasRole('admin')" type="button" class="btn btn-primary" (click)="addOrUpdateClient()">
       Save changes
     </button>
   </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap'
+import { AuthorizationService } from '../autorisation/authorization.service'
+import { AuthenticationService } from '../service/authentication-service'
 
 interface Client {
   id: number
@@ -18,7 +20,7 @@ export class ListeClientsComponent implements OnInit {
   closeResult = ''
   errorMessage: string | null = null
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal,public authenficatedService:AuthenticationService) {}
 
   ngOnInit(): void {
     const storedClients = localStorage.getItem('clients')

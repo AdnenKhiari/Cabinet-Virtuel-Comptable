@@ -4,8 +4,8 @@ import { Component } from '@angular/core'
 import { CharteChargesComponent } from '../charte-charges/charte-charges.component'
 import { CharteEcartRevenuesChargesComponent } from '../charte-ecart-revenues-charges/charte-ecart-revenues-charges.component'
 import { RevenuesClientsComponent } from '../revenues-clients/revenues-clients.component'
-import { AuthorizationService } from '../autorisation/authorization.service'
 import { CommonModule } from '@angular/common'; // Import CommonModule
+import { AuthenticationService } from '../service/authentication-service'
 
 @Component({
   selector: 'app-tableau-de-bord',
@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 })
 export class TableauDeBordComponent {
 
-  constructor(public authService :AuthorizationService) {}
+  constructor(public authService:AuthenticationService) {}
   chiffreAffaire = 100000
   Benefice = 10000
 }

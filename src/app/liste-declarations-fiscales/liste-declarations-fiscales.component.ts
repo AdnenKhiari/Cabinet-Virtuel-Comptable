@@ -3,7 +3,8 @@ import { DecFiscale } from '../modeles/decfiscales.modeles'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { Router } from '@angular/router'
 import { HttpErrorResponse } from '@angular/common/http'
-import { AuthService } from '../authentification/auth.service'
+import { AuthenticationService } from '../service/authentication-service'
+import { SearchService } from '../service/search.service'
 
 @Component({
   selector: 'app-liste-declarations-fiscales',
@@ -20,9 +21,9 @@ export class ListeDeclarationsFiscalesComponent {
   firstname: String = ''
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router
-    private fichierService: FichierService,
-    private authService: AuthService
+    private router: Router,
+    private fichierService: SearchService,
+    private authService: AuthenticationService
 
   ) {}
 
@@ -34,9 +35,9 @@ export class ListeDeclarationsFiscalesComponent {
   public loadAllDeclarations(
 
   ) {
-    const currentUser = this.authService.getCurrentUser();
+    const currentUser = this.authService.getCurrentUser()
 
-    this.fichierService.GetFichierByCode(currentUser.clientcode).subscribe(
+    this.fichierService.GetFichierByCode(currentUser?._id).subscribe(
       (fichier: any) => {
         this.listDeclarations = fichier
       },
