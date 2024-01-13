@@ -81,7 +81,7 @@ export class AuthenticationService {
       raisonsociale: user.raisonsociale,
       nomsociete: user.nomsociete,
       clientcode: user.clientcode,
-      role: 'admin',
+      role: 'client',
       created: { $date: user.created?.$date }
     })
 
