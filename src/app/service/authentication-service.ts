@@ -64,6 +64,7 @@ export class AuthenticationService {
 
   public authenticateUser(user: User): Observable<boolean> {
     this.authenticatedUser = user
+
     // Stringify all properties of the user and store in localStorage
     const userJsonString = JSON.stringify({
       _id: { $oid: user._id?.$oid },
@@ -80,12 +81,12 @@ export class AuthenticationService {
       raisonsociale: user.raisonsociale,
       nomsociete: user.nomsociete,
       clientcode: user.clientcode,
-      role: user.role,
+      role: 'user',
       created: { $date: user.created?.$date }
     })
 
     localStorage.setItem('authUser', userJsonString)
-
+    this.users.push(user)
     return of(true)
   }
 
@@ -94,6 +95,9 @@ export class AuthenticationService {
   }
   public getUserRole(): string | undefined {
     return this.authenticatedUser?.role
+  }
+  public getCurrentUser(): User | null {
+    return this.authenticatedUser || null
   }
 
   public isAuthenticated() {

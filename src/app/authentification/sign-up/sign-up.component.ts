@@ -44,11 +44,11 @@ export class SignUpComponent implements OnInit {
 
     this.authService.authenticateUser(user).subscribe({
       next: () => {
-        this.router.navigateByUrl('/home')
+        this.successMessage = 'signup successful!'
+        this.router.navigateByUrl('/#home')
       },
       error: err => {
         // Handle authentication error
-        this.successMessage = 'signup successful!'
         this.errorMessage = err
       }
     })
