@@ -31,7 +31,7 @@ export class AuthenticationService {
     this.users.push({
       _id: { $oid: UUID.UUID() },
       email: 'john.doe@example.com',
-      password: '$2b$10$SomeHashedPassword',
+      password: '12345',
       confirmpassword: '$2b$10$SomeHashedPassword',
       firstname: 'John',
       lastname: 'Doe',

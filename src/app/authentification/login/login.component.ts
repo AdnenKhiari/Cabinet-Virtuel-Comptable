@@ -11,6 +11,7 @@ import { AuthenticationService } from 'src/app/service/authentication-service'
 export class LoginComponent implements OnInit {
   userFormGroup!: FormGroup
   errorMessage: any
+  successMessage: any
 
   constructor(
     private fb: FormBuilder,
@@ -32,7 +33,8 @@ export class LoginComponent implements OnInit {
       next: User => {
         //this.authService.authenticateUser(User).subscribe({
         //next : ()=>{ implement the router here }
-        this.router.navigateByUrl('/home')
+        this.successMessage = 'Login successful!'
+        this.router.navigateByUrl('/#home')
       },
       error: err => {
         this.errorMessage = err
