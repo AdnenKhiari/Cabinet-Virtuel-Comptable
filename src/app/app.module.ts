@@ -12,16 +12,24 @@ import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { GestionComptesComponent } from './gestion-comptes/gestion-comptes.component'
 import { MatTabsModule } from '@angular/material/tabs'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ComptesBancairesComponent } from './gestion-comptes/comptes-bancaires/comptes-bancaires.component'
 
 @NgModule({
-  declarations: [AppComponent, ListeClientsComponent, GestionComptesComponent],
+  declarations: [
+    AppComponent,
+    ListeClientsComponent,
+    GestionComptesComponent,
+    ComptesBancairesComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthentificationModule,
     FormsModule,
     NgbModule,
-    MatTabsModule
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
