@@ -1,25 +1,32 @@
-<div class="text-center">
-    <main class="form-signin">
-        <form>
-            <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+<h1>Cabinet Comptable Virtuel</h1>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+        <div class="card auth">
+            <div class="card-body auth-card">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" name="password" class="form-control" placeholder="********" />
+                        <div class="text-right forget-pass">
+                            <a routerLink="/auth/forget-password">Forget Password ?</a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-my" value="Login" />
+                    </div>
+                </form>
+                <div class="text-center sign-up">
+                    Don`t have an account ?
+                    <a routerLink="/auth/signup">Sign Up</a>
+                    here.
+                </div>
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
-        </form>
-    </main>
+        </div>
+    </div>
 </div>
