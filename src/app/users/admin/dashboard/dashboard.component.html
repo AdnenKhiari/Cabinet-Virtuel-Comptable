@@ -30,25 +30,29 @@
                 </mat-list-item>
                 <mat-divider class="list-divider"></mat-divider>
                 <a>
-                    <mat-list-item routerLink="./overview">
+                    <mat-list-item routerLink="./tableau-de-bord">
                         <mat-icon matListItemIcon class="sidebar-icon"
                             routerLinkActive="active-link">data_usage</mat-icon>
-                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Overview</div>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Tableau de bord</div>
                     </mat-list-item>
                 </a>
                 <a>
-                    <mat-list-item routerLink="./users">
-                        <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">group</mat-icon>
-                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Users</div>
-                    </mat-list-item>
-                </a>
-                <a>
-                    <mat-list-item routerLink="./canvas">
+                    <mat-list-item routerLink="./gestion-user">
                         <mat-icon matListItemIcon class="sidebar-icon"
-                            routerLinkActive="active-link">fact_checked</mat-icon>
-                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Canvas</div>
+                            routerLinkActive="active-link">data_usage</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Gestion user</div>
                     </mat-list-item>
                 </a>
+                <a>
+                    <mat-list-item routerLink="./Historique">
+                        <mat-icon matListItemIcon class="sidebar-icon"
+                            routerLinkActive="active-link">account_balance</mat-icon>
+                        <div matListItemTitle routerLinkActive="active-link" class="list-item-text">historique actions</div>
+                    </mat-list-item>
+                </a>
+
+
+
             </mat-list>
         </mat-drawer>
         <router-outlet></router-outlet>

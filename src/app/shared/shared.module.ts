@@ -12,6 +12,7 @@ import { MatTableModule } from '@angular/material/table';
     CharteChargesComponent,
     CharteEcartRevenuesChargesComponent,
     RevenuesClientsComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -21,7 +22,7 @@ import { MatTableModule } from '@angular/material/table';
   exports: [
     CharteChargesComponent,
     CharteEcartRevenuesChargesComponent,
-    RevenuesClientsComponent
+    RevenuesClientsComponent,
   ]
 })
 export class SharedModule { }
