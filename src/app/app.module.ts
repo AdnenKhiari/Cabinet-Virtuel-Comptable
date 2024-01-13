@@ -31,6 +31,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NotifierModule } from 'angular-notifier'
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     TableauDeBordComponent,
     ImpressionsDocumentsListComponent,
     FormsModule,
-    NgbModule
+    NgbModule,
+    NotifierModule
   ]
 })
 export class AppModule {}
