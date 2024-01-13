@@ -1,25 +1,35 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
-
 .suivi-echeances-container {
   max-width: 80%;
   margin: 0 auto;
   font-weight: bold;
   font-family: Comic Sans MS;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .title-options-container {
   display: flex;
   justify-content: space-between;
   background-color: #f6f6f6;
+  margin-top: 30px;
   margin-bottom: 10px;
+  height: 70px;
   border: solid 1px rgb(140, 140, 140);
   border-radius: 10px;
 }
 
 .component-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
 }
 
 .header-options {
@@ -46,20 +56,20 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 10px;
   border-bottom: solid 1px rgb(140, 140, 140);
 
   .month {
     padding-bottom: 3px;
     margin: 10px;
-    cursor: pointer;
 
     span {
       color: #3498db;
       padding: 8px;
       border-radius: 5px;
       margin-right: 5px;
+      cursor: pointer;
     }
 
     span:hover,
@@ -72,6 +82,7 @@
       position: absolute;
       color: #3498db;
       left: 45%;
+      top: 120%;
       margin-bottom: 20px;
     }
 
@@ -82,7 +93,7 @@
       top: 160%;
       left: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       background-color: #fff;
     }
   }
@@ -92,6 +103,7 @@
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
+  width: calc(100% / 6);
 
   .week-header {
     color: rgb(195, 190, 190);
@@ -119,6 +131,53 @@
       font-family: 'Trebuchet MS', sans-serif;
       padding: 10px;
       border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-options-container {
+    flex-direction: column;
+
+    .component-title {
+      text-align: center;
+    }
+  }
+
+  .header-options {
+    flex-direction: column;
+
+    div {
+      margin-bottom: 10px;
+
+      label {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      select,
+      input {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .months {
+    flex-direction: column;
+
+    .month {
+      margin-bottom: 20px;
+
+      .month-name {
+        display: none;
+      }
+
+      .weeks {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+      }
     }
   }
 }

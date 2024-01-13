@@ -31,6 +31,9 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { Routes } from '@angular/router'
 import { HttpClientModule } from '@angular/common/http';
 
+import { ListeClientsComponent } from './liste-clients/liste-clients.component'
+import { FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -40,9 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     ConfigurationComponent,
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
-    GestionUserComponent
-    
-    
+    GestionUserComponent,
+    ListeClientsComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -51,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     AuthentificationModule,
     NotificationModule,
+    ReactiveFormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
@@ -61,8 +64,8 @@ import { HttpClientModule } from '@angular/common/http';
     SaisieComptableModule,
     TableauDeBordComponent,
     ImpressionsDocumentsListComponent,
-    HttpClientModule
-
+    FormsModule,
+    NgbModule
   ]
 })
 export class AppModule { }

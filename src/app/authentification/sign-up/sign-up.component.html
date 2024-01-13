@@ -1,48 +1,85 @@
 <div class="row">
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div class="card auth">
+      <div class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+      <div class="text-success" *ngIf="successMessage">{{ successMessage }}</div>
       <div class="card-body auth-card">
-        <form>
+        <form [formGroup]="userFormGroup" (ngSubmit)="handleSignup()">
           <div class="form-group">
-            <label for="name">First Name :</label>
-            <input type="text" name="name" class="form-control" placeholder="First Name" />
+            <label class="form-label">First Name :</label>
+            <input
+              type="text"
+              formControlName="Firstname"
+              class="form-control"
+              placeholder="First Name" />
           </div>
           <div class="form-group dj-danger">
             <label for="name">Last Name :</label>
-            <input type="text" name="name" class="form-control" placeholder="Last Name" />
+            <input
+              type="text"
+              formControlName="lastname"
+              class="form-control"
+              placeholder="Last Name" />
           </div>
 
           <div class="form-group">
             <label for="phone">Phone :</label>
-            <input type="text" name="phone" class="form-control" placeholder="Phone" />
+            <input type="text" formControlName="phone" class="form-control" placeholder="Phone" />
           </div>
           <div class="form-group">
             <label for="email">Email :</label>
-            <input type="text" name="email" class="form-control" placeholder="Email" />
+            <input type="text" formControlName="email" class="form-control" placeholder="Email" />
           </div>
           <div class="form-group">
             <label for="password">Password :</label>
-            <input type="password" name="password" class="form-control" placeholder="********" />
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="********" />
           </div>
           <div class="form-group">
             <label for="c_password">Confirm Password :</label>
-            <input type="password" name="c_password" class="form-control" placeholder="********" />
+            <input
+              type="password"
+              formControlName="confirmpassword"
+              class="form-control"
+              placeholder="********" />
           </div>
           <div class="form-group">
             <label for="name">Civilité :</label>
-            <input type="text" name="name" class="form-control" placeholder="Votre Civilité" />
+            <input
+              type="text"
+              formControlName="civilite"
+              class="form-control"
+              placeholder="Votre Civilité" />
           </div>
           <div class="form-group">
             <label for="name">Fonction :</label>
-            <input type="text" name="name" class="form-control" placeholder="Votre Fonction" />
+            <input
+              type="text"
+              formControlName="fonction"
+              class="form-control"
+              placeholder="Votre Fonction" />
           </div>
           <div class="form-group">
             <label for="name">Secteur :</label>
-            <input type="text" name="name" class="form-control" placeholder="Secteur d'Activité" />
+            <input
+              type="text"
+              formControlName="secteur"
+              class="form-control"
+              placeholder="Secteur d'Activité" />
           </div>
           <div class="form-group">
             <label for="name">Nom Société :</label>
-            <input type="text" name="name" class="form-control" placeholder="Société" />
+            <input
+              type="text"
+              formControlName="nomsociete"
+              class="form-control"
+              placeholder="Société" />
+          </div>
+          <div class="text-center login">
+            <button type="submit" class="btn btn-my">Submit</button>
           </div>
           <div class="text-center login">
             Already have an account ?

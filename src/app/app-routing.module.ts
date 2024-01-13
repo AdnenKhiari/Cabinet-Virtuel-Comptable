@@ -18,6 +18,9 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { autorisationGuard } from './guards/autorisation.guard'
 
 const routes: Routes = [
+  
+  { path: '', component: LoginComponent },
+
   { path: 'Login', component: LoginComponent },
   { path: 'Signup', component: SignUpComponent },
   { path: 'forget-password', component: ForgotPasswordComponent },
