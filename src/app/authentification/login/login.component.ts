@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { Router } from '@angular/router'
 import { AuthenticationService } from 'src/app/service/authentication-service'
 
 @Component({
@@ -9,10 +10,12 @@ import { AuthenticationService } from 'src/app/service/authentication-service'
 })
 export class LoginComponent implements OnInit {
   userFormGroup!: FormGroup
+  errorMessage: any
 
   constructor(
     private fb: FormBuilder,
-    private authService: AuthenticationService
+    private authService: AuthenticationService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -23,9 +26,17 @@ export class LoginComponent implements OnInit {
   }
 
   handleLogin(): void {
-    // Implement your login logic here
     let email = this.userFormGroup.value.email
     let password = this.userFormGroup.value.password
-    this.authService.login(email, password).subscribe()
+    this.authService.login(email, password).subscribe({
+      next: User => {
+        //this.authService.authenticateUser(User).subscribe({
+        //next : ()=>{ implement the router here }
+        this.router.navigateByUrl('/home')
+      },
+      error: err => {
+        this.errorMessage = err
+      }
+    })
   }
 }

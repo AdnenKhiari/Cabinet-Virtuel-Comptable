@@ -6,6 +6,7 @@
     <div class="card auth">
       <div class="card-body auth-card">
         {{ userFormGroup.value | json }}
+        <div class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
         <form [formGroup]="userFormGroup" (ngSubmit)="handleLogin()">
           <div class="form-group">
             <label class="form-label">Email :</label>
