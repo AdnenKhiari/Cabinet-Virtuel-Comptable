@@ -7,14 +7,15 @@ import { CompteResultatComponent } from './compte-resultat/compte-resultat.compo
 import { DeclarationTvaComponent } from './declaration-tva/declaration-tva.component';
 
 const routes: Routes = [
-    { path: './bilan', component: BilanComponent },
-    { path: './compte-resultat', component: CompteResultatComponent },
-    { path: './declaration-tva', component: DeclarationTvaComponent },
-    { path: '', component: RapportFinanciersComponent }, 
+    { path: '', component: RapportFinanciersComponent },
+    { path: 'bilan', component: BilanComponent },
+    { path: 'compte-resultat', component: CompteResultatComponent },
+    { path: 'declaration-tva', component: DeclarationTvaComponent },
+    { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule],
+    imports: [RouterModule.forChild(routes)], 
+    exports: [RouterModule]
 })
 export class RapportFinanciersRoutingModule {}
