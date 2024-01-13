@@ -14,13 +14,15 @@ import { GestionComptesComponent } from './gestion-comptes/gestion-comptes.compo
 import { MatTabsModule } from '@angular/material/tabs'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ComptesBancairesComponent } from './gestion-comptes/comptes-bancaires/comptes-bancaires.component'
+import { RelevesBancairesComponent } from './gestion-comptes/releves-bancaires/releves-bancaires.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeClientsComponent,
     GestionComptesComponent,
-    ComptesBancairesComponent
+    ComptesBancairesComponent,
+    RelevesBancairesComponent
   ],
   imports: [
     BrowserModule,
