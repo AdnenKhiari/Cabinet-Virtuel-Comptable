@@ -1,0 +1,4 @@
+Modèle de Commentaire : Ce modèle représente un commentaire associé à une réclamation,
+ contenant des informations telles que l'identifiant du commentaire l'auteur,
+  le texte du commentaire, la date, etc.
+
