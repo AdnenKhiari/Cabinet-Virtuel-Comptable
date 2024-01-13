@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { NotificationService } from '../services/notification.service'
-import { Notification, NotificationType } from './notification'
+import { Notification, NotificationType } from '../services/interfaces/notification'
 import { Subscription } from 'rxjs'
 
 @Component({
