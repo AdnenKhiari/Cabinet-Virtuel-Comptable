@@ -1,18 +1,41 @@
-
-.card.auth {
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Utilisation de flexbox pour centrer le .card-body */
-    flex-direction: column; /* Pour aligner les enfants en colonne */
-    align-items: center; /* Pour centrer les enfants horizontalement */
+.row {
+    margin-top: 10px;
   }
+  
+  .card.auth {
+    max-width: 100%; /* Adjust the width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Add a background color for the image part */
+  }
+  
+  .auth-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  
   .auth-card {
     padding: 30px;
-    width: 100%; /* Ajustement de la largeur */
-    box-sizing: border-box; /* Pour inclure les paddings dans la largeur */
-  
+    box-sizing: border-box;
   }
+  
+  .col-md-10.offset-md-1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row {
+    margin-top: 40px;
+}
+
+ 
 
   .form-group {
     width: 100%; /* Ajustement de la largeur */
@@ -33,7 +56,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; /* Pour inclure les paddings dans la largeur */
-    margin-bottom: 20px; /* Ajustement de la marge en bas */
+    margin-bottom: 7px; /* Ajustement de la marge en bas */
   }
 
   .text-right.forget-pass {
@@ -46,7 +69,7 @@
   .btn.btn-my {
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
+    background-color: #776de1;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -55,7 +78,7 @@
   }
 
   .btn.btn-my:hover {
-    background-color: #2ecc71;
+    background-color: #cd85e3;
   }
 
   .text-center.sign-up {
@@ -72,3 +95,4 @@
   .text-center.sign-up a:hover {
     text-decoration: underline;
   }
+  
