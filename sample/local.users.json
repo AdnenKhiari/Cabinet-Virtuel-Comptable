@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "62e666d00bd8a70a2fdd312e"
+  },
+  "email": "f.benayed@gnet.tn",
+  "password": "$2b$10$SmngA.WGX81mhNiE4qJYvOVeCH95JtZuCx58bP4OG/mt73p3fJFqK",
+  "confirmpassword": "$2b$10$xKRJOFlwiDk0G2xbCyhW9e1i0RqyAQ8kOzctSfYXi4vSwZbLVrp..",
+  "firstname": "fayçal",
+  "lastname": "benayed",
+  "fonction": null,
+  "secteur": null,
+  "civilite": "Monsieur",
+  "usertype": "Collaborateur",
+  "mobile": "21698350575",
+  "raisonsociale": null,
+  "nomsociete": null,
+  "clientcode": "a254",
+  "role": "admin",
+  "created": {
+    "$date": "2022-07-31T11:26:08.874Z"
+  },
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmU2NjZkMDBiZDhhNzBhMmZkZDMxMmUiLCJpYXQiOjE2OTY3MDM0NTgsImV4cCI6MjU2MDcwMzQ1OH0.4aJuC9TJz0FZGC2ASuEG8Cq8kyBq2XKjp_QzozrkmWw",
+  "__v": 4,
+  "verified": {
+    "$date": "2022-07-31T11:27:21.869Z"
+  },
+  "updated": {
+    "$date": "2023-03-05T14:15:33.317Z"
+  },
+  "matriculefiscale": " null AP null",
+  "natureactivite": "Autre/null",
+  "regimefiscalimpot": "Réel",
+  "regimefiscaltva": "Assujeti Obligatoire",
+  "sousactivite": "Avocat",
+  "activite": "Avocat",
+  "adresseactivite": null,
+  "codepostal": null,
+  "desactive": {
+    "date": {
+      "$date": "2022-09-18T14:55:07.425Z"
+    },
+    "statut": false
+  },
+  "droitcompta": "",
+  "rolesuperviseur": "Autorisé",
+  "connected": true,
+  "choixfacture": [],
+  "numeronote": [],
+  "paramcomptable": [],
+  "coproprietaires": [],
+  "choixsyndic": []
+}]

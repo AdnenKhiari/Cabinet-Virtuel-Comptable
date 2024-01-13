@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "63ac48f569b4eb6468ed0a3a"
+  },
+  "titre": "Loi de finances 2023",
+  "commentaire": "Augmentation du plafond des crédits accordés par la BTS aux diplômés de l’enseignement supérieur  de 150.000 DT à 200.000 DT",
+  "description": "",
+  "ficheUrl": "http://res.cloudinary.com/dfodbn7qv/image/upload/v1672235252/uploadedfiche/Augmentation_du_plafond_des_cr%C3%83%C2%A9dits_accord%C3%83%C2%A9s_par_la_BTS_aux_dipl%C3%83%C2%B4m%C3%83%C2%A9s_de_l%C3%A2%C2%80%C2%99enseignement_sup%C3%83%C2%A9rieur__de_150.000_DT_%C3%83%C2%A0_200.000_DT.pdf",
+  "created": {
+    "$date": "2022-12-28T13:47:33.190Z"
+  },
+  "__v": 0,
+  "updated": {
+    "$date": "2023-01-17T15:15:46.172Z"
+  },
+  "rang": 1
+},
+{
+  "_id": {
+    "$oid": "63ad52e9d583c1d33bf66d92"
+  },
+  "titre": "Loi des finances 2023",
+  "commentaire": "Changement des taux et des minimal de la CSS",
+  "description": "",
+  "rang": 3,
+  "ficheUrl": "",
+  "created": {
+    "$date": "2022-12-29T08:42:17.659Z"
+  },
+  "__v": 1,
+  "updated": {
+    "$date": "2023-03-03T08:04:24.110Z"
+  },
+  "tarifs": []
+},
+{
+  "_id": {
+    "$oid": "63ad53ded583c1d33bf66da9"
+  },
+  "titre": "Loi de finances 2023",
+  "commentaire": "Instauration de l’impôt sur la fortune immobilière au taux de 0,5%",
+  "description": "lujhfjfhkjhfvjfvhkjh",
+  "rang": 2,
+  "ficheUrl": "",
+  "created": {
+    "$date": "2022-12-29T08:46:22.850Z"
+  },
+  "__v": 0,
+  "updated": {
+    "$date": "2023-01-17T15:15:54.673Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63ad5420d583c1d33bf66dae"
+  },
+  "titre": "Loi de finances 2023",
+  "commentaire": "Imposition de la plus-value sur la cession des terrains agricoles",
+  "description": "",
+  "rang": 6,
+  "ficheUrl": "",
+  "created": {
+    "$date": "2022-12-29T08:47:28.146Z"
+  },
+  "__v": 0,
+  "updated": {
+    "$date": "2022-12-29T09:21:57.898Z"
+  }
+}]
