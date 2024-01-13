@@ -1,0 +1,18 @@
+L'interface MembreCabinet représente un membre du cabinet dans le système,
+ fournissant des informations spécifiques à l'identification et au rôle de ce membre.
+
+L'interface TravailMembreCabinet représente une entité dans le système qui enregistre les informations
+ relatives à une tâche effectuée par un membre du cabinet 
+avec des détails tels que la nature de la tâche,
+ la durée, les dates de début et de fin, 
+ et le code client lié à la tâche (si applicable )
+
+export interface TravailMembreCabinet {
+  id: string; // Identifiant du travail chronométré
+  membreCabinet: MembreCabinet; // Membre du cabinet associé au travail
+  tache: string; // Description de la tâche effectuée
+  tempsPasse: number; // Temps passé sur la tâche en minutes
+  dateDebut: Date; // Date de début du travail
+  dateFin: Date; // Date de fin du travail
+  clientCode?: string; // Code client lié à la tâche (si applicable)
+}
