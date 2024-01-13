@@ -14,7 +14,7 @@ export class BilanComponent implements OnInit {
 
   ngOnInit(): void {
       // Fetch Bilan data from service or store
-    //this.bilandata = ...; 
+      //   this.bilandata = data;
   }
 
 }
