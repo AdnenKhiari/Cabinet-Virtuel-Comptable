@@ -31,6 +31,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { XmlToJsonComponent } from './xml-to-json/xml-to-json.component'
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
     GestionUserComponent,
-    ListeClientsComponent
+    ListeClientsComponent,
+    XmlToJsonComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
