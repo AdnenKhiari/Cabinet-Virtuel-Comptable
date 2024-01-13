@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CompteResultatComponent implements OnInit {
 
   // Data for the Compte de Résultat 
-  comptederésultatdata: any;
+  comptederesultatdata: any;
 
   constructor() {}
 

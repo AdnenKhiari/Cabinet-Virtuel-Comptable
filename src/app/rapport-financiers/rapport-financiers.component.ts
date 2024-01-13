@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'; 
 
 @Component({
@@ -6,20 +6,23 @@ import { Router } from '@angular/router';
   templateUrl: './rapport-financiers.component.html',
   styleUrls: ['./rapport-financiers.component.css']
 })
-export class RapportFinanciersComponent {
+export class RapportFinanciersComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  ngOnInit() {}
+
+
   onBilanClick() {
-    this.router.navigate(['bilan']);
+    this.router.navigate(['./bilan']);
   }
 
   onCompteResultatClick() {
-    this.router.navigate(['compte-resultat']); 
+    this.router.navigate(['./compte-resultat']); 
   }
 
   onDeclarationTvaClick() {
-    this.router.navigate(['declaration-tva']); 
+    this.router.navigate(['./declaration-tva']); 
   }
 
 }
