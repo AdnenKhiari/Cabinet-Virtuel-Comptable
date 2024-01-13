@@ -11,7 +11,7 @@
         <th>ID</th>
         <th>Nom</th>
         <th>Numero Compte</th>
-        <th>Balence</th>
+        <th>Solde</th>
         <th>Actions</th>
       </tr>
     </thead>
@@ -82,7 +82,7 @@
           [(ngModel)]="selectedClient!.accounts.accountNumber"
           name="selectedClient?.accounts?.accountNumber" />
 
-        <label [for]="selectedClient?.accounts?.balance">Balance</label>
+        <label [for]="selectedClient?.accounts?.balance">Solde</label>
         <input
           type="number"
           class="form-control"
