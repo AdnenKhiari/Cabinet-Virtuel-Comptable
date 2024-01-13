@@ -1,26 +1,48 @@
+<!-- tableau-de-bord.component.html -->
+
 <div class="row">
   <div class="col-md-12">
     <h1>Tableau de bord</h1>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Chiffres d'affaires</h2>
-      <h1>{{ chiffreAffaire }}MDT</h1>
-    </div>
-    <div class="col-md-6">
-      <h2>Bénéfice net</h2>
-      <h1>{{ Benefice }}MDT</h1>
-    </div>
+</div>
+
+<!-- Admin Section -->
+<div class="row" *ngIf="authService.hasRole('admin')">
+  <div class="col-md-6">
+    <h2>Chiffres d'affaires</h2>
+    <h1>{{ chiffreAffaire }}MDT</h1>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <app-charte-charges></app-charte-charges>
-    </div>
-    <div class="col-md-6">
-      <app-charte-ecart-revenues-charges></app-charte-ecart-revenues-charges>
-    </div>
+  <div class="col-md-6">
+    <h2>Bénéfice net</h2>
+    <h1>{{ Benefice }}MDT</h1>
   </div>
-  <div class="row">
+
+  <div class="col-md-6">
+    <app-charte-charges></app-charte-charges>
+  </div>
+  <div class="col-md-6">
+    <app-charte-ecart-revenues-charges></app-charte-ecart-revenues-charges>
+  </div>
+
+  <div class="col-md-12">
     <app-revenues-clients></app-revenues-clients>
   </div>
 </div>
+
+<!-- Collaborateur Section -->
+<div class="row" *ngIf="authService.hasRole('collaborateur')">
+  <div class="col-md-6">
+    <app-charte-charges></app-charte-charges>
+  </div>
+  <div class="col-md-6">
+    <app-charte-ecart-revenues-charges></app-charte-ecart-revenues-charges>
+  </div>
+</div>
+
+<!-- Client Section -->
+<div class="row" *ngIf="authService.hasRole('client')">
+  <div class="col-md-12">
+    <app-revenues-clients></app-revenues-clients>
+  </div>
+</div>
+
