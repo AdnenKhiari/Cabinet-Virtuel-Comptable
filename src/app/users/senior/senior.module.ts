@@ -24,7 +24,6 @@ import { ImpressionsDocumentsListComponent } from './impressions-documents-list/
     ClientsComponent,
     ComptablesComponent,
     CanvasComponent,
-    ImpressionsDocumentsListComponent
   ],
   imports: [
     CommonModule,
