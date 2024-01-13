@@ -12,7 +12,4 @@ export class LoginComponent implements OnInit {
     this.notifier = notifierService
   }
   ngOnInit() {}
-  test_notif() {
-    this.notifier.notify('success', 'You are awesome! I mean it!')
-  }
 }
