@@ -22,6 +22,7 @@
     "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "pdfmake": "^0.2.9",
     "rxjs": "~7.8.0",
     "tslib": "^2.6.2",
     "zone.js": "~0.13.0"
@@ -34,6 +35,7 @@
     "@types/body-parser": "^1.19.5",
     "@types/file-saver": "^2.0.7",
     "@types/jasmine": "~4.3.0",
+    "@types/pdfmake": "^0.2.8",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
