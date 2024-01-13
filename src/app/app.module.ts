@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
+import { HttpClientModule } from '@angular/common/http'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 import { AuthentificationModule } from './authentification/authentification.module'
@@ -30,7 +32,6 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { ConfigurationComponent } from './configuration/configuration.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    BrowserModule,
     AppRoutingModule,
     NotificationModule,
     NavbarModule,
@@ -62,7 +62,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     TableauDeBordComponent,
     ImpressionsDocumentsListComponent,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ]
 })
 export class AppModule {}
