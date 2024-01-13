@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-compte-resultat',
@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./compte-resultat.component.css']
 })
 export class CompteResultatComponent implements OnInit {
-
-  // Data for the Compte de Résultat 
-  comptederesultatdata: any;
+  // Data for the Compte de Résultat
+  comptederesultatdata: any
 
   constructor() {}
 
@@ -16,5 +15,4 @@ export class CompteResultatComponent implements OnInit {
     // Fetch Compte de Résultat data from service or store
     // this.comptederésultatdata = ...;
   }
-
 }

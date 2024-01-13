@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-declaration-tva',
@@ -6,15 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./declaration-tva.component.css']
 })
 export class DeclarationTvaComponent implements OnInit {
-
-  // Data for TVA 
-  declarationtvaData: any;
+  // Data for TVA
+  declarationtvaData: any
 
   constructor() {}
 
   ngOnInit(): void {
-    // Fetch TVA data 
-    // this.declarationtvaData = ...; 
+    // Fetch TVA data
+    // this.declarationtvaData = ...;
   }
-
 }
