@@ -31,6 +31,8 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { XMLtoPDFComponent } from './xmlto-pdf/xmlto-pdf.component'
+import { XmlToPdfComponent } from './xml-to-pdf/xml-to-pdf.component'
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
     GestionUserComponent,
-    ListeClientsComponent
+    ListeClientsComponent,
+    XMLtoPDFComponent,
+    XmlToPdfComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
