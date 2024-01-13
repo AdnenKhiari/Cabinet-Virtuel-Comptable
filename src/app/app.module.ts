@@ -1,9 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
+import { RapportFinanciersComponent } from './rapport-financiers/rapport-financiers.component';
+import { RapportFinanciersRoutingModule } from './rapport-financiers/rapport-financiers-routing.module';
+import { BilanComponent } from './rapport-financiers/bilan/bilan.component';
+import { CompteResultatComponent } from './rapport-financiers/compte-resultat/compte-resultat.component';
+import { DeclarationTvaComponent } from './rapport-financiers/declaration-tva/declaration-tva.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthentificationModule } from './authentification/authentification.module'
 import { LoginComponent } from './authentification/login/login.component'
 import { SignUpComponent } from './authentification/sign-up/sign-up.component'
@@ -22,7 +28,11 @@ import { SaisieComptableModule } from './saisie-comptable/saisie-comptable.modul
     ListeDeclarationsFiscalesComponent,
     ListeFacturesComponent,
     SuiviEcheancesFiscalesComponent,
-    HistoriqueActionsComponent
+    HistoriqueActionsComponent,
+    RapportFinanciersComponent,
+    BilanComponent,
+    CompteResultatComponent,
+    DeclarationTvaComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,8 @@ import { SaisieComptableModule } from './saisie-comptable/saisie-comptable.modul
     ReactiveFormsModule,
     NotificationModule,
     NavbarModule,
-    SaisieComptableModule
+    SaisieComptableModule,
+    RapportFinanciersRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
