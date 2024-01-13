@@ -1,31 +1,42 @@
-# Build Status
+# Gestion des Comptes Utilisateurs et Bancaires avec Angular
 
-## Develop
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cacdbd9a-2221-4de5-b3f5-eb8e16f5ab49/deploy-status?branch=develop)](https://app.netlify.com/sites/cabinet-comptable/deploys?branch=develop&filter=develop)
+Cette partie du projet Angular offre la possibilité de gérer à la fois les comptes utilisateurs et les comptes bancaires, avec des fonctionnalités distinctes pour chacun.
 
-## Main
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cacdbd9a-2221-4de5-b3f5-eb8e16f5ab49/deploy-status?branch=main)](https://app.netlify.com/sites/cabinet-comptable/deploys?branch=main&filter=main)
+## Gestion des Comptes Utilisateurs
 
-# Comptable
+Le composant `ListeClientsComponent` permet de gérer les informations des clients, notamment leur nom, adresse e-mail, numéro de téléphone, etc. Les principales fonctionnalités incluent l'ajout, la mise à jour et la suppression de clients. Les données des clients sont stockées localement à l'aide de `localStorage`.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+### Fonctionnalités
 
-# Git Flow 
+- Affichage de la liste des clients avec leurs détails.
+- Ajout d'un nouveau client en remplissant un formulaire modal.
+- Mise à jour des informations d'un client existant via le même formulaire modal.
+- Suppression d'un client de la liste.
+- Stockage des données des clients dans `localStorage`.
 
-Check this link : https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html
+### Capture d'écran
 
-## Development server
+![Liste des Clients](screenshots/liste-clients.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Modal de Gestion des Clients](screenshots/modal-client.png)
 
-## Code scaffolding
+## Gestion des Comptes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Le composant `ComptesBancairesComponent` permet de gérer les comptes bancaires associés à chaque client. Le composant comporte également un formulaire modal pour ajouter, mettre à jour et supprimer des comptes bancaires. Les relevés bancaires associés à chaque compte sont également pris en charge par le composant `RelevesBancairesComponent`.
 
-## Build
+### Fonctionnalités
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Affichage des clients avec leurs comptes bancaires et soldes associés.
+- Ajout, mise à jour et suppression de comptes bancaires pour chaque client.
+- Gestion des relevés bancaires avec la possibilité d'ajouter de nouvelles opérations.
+- Stockage des données des clients dans `localStorage`.
 
-## Further help
+### Capture d'écran
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Liste des Comptes Bancaires](/screenshots/liste-comptes-bancaires.png)
+
+![Modal de Gestion des Comptes Bancaires](/screenshots/modal-compte-bancaire.png)
+
+![Liste des Relevés Bancaires](/screenshots/liste-releves-bancaires.png)
+
+![Modal de Gestion des Relevés Bancaires](/screenshots/modal-releve-bancaire.png)
