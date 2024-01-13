@@ -5,7 +5,6 @@
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div class="card auth">
       <div class="card-body auth-card">
-        {{ userFormGroup.value | json }}
         <div class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
         <div class="text-success" *ngIf="successMessage">{{ successMessage }}</div>
 
