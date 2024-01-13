@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatListModule } from '@angular/material/list';
     OverviewComponent,
     ClientsComponent,
     ComptablesComponent,
-    CanvasComponent
+    CanvasComponent,
+    ImpressionsDocumentsListComponent
   ],
   imports: [
     CommonModule,

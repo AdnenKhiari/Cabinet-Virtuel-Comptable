@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { OverviewComponent } from './overview/overview.component';
+import { NgModule } from '@angular/core';
+import { ConfigurationComponent } from './configuration/configuration.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: 'overview', component: OverviewComponent},
       { path: 'canvas', component: CanvasComponent },
+      { path: 'configuration', component: ConfigurationComponent },
     ]
   }
 ];

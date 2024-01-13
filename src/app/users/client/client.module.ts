@@ -11,12 +11,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { CanvasComponent } from './canvas/canvas.component';
 import { MatListModule } from '@angular/material/list';
 import { OverviewComponent } from './overview/overview.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     CanvasComponent,
     OverviewComponent,
+    ConfigurationComponent,
   ],
   imports: [
     CommonModule,
