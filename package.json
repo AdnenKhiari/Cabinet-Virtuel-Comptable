@@ -30,6 +30,7 @@
     "@ng-bootstrap/ng-bootstrap": "^15.1.2",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "connect": "^3.7.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -44,6 +45,7 @@
     "@angular/cli": "~16.2.2",
     "@angular/compiler-cli": "^16.2.0",
     "@angular/localize": "^16.2.0",
+    "@types/connect": "^3.4.38",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
@@ -55,7 +57,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.0",
     "typescript": "~5.1.3"
   }
