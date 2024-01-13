@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { AuthenticationService } from '../service/authentication-service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthorizationService {
 
-  constructor() { }
+  constructor() {}
   private userRoles: string[] = [];
   setUserRoles(roles: string[]): void {
     this.userRoles = roles;
