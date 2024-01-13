@@ -5,6 +5,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ComptablesComponent } from './comptables/comptables.component';
+import { ImpressionsDocumentsListComponent } from './impressions-documents-list/impressions-documents-list.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'canvas', component: CanvasComponent },
       { path: 'comptables', component: ComptablesComponent },
       { path: 'clients', component: ClientsComponent },
+      { path: 'documents', component: ImpressionsDocumentsListComponent },
     ]
   }
 ];
