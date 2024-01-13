@@ -29,6 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatTabsModule } from '@angular/material/tabs'
 import { ConfigurationComponent } from './configuration/configuration.component'
 import { Routes } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { Routes } from '@angular/router'
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
     GestionUserComponent
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -48,7 +52,6 @@ import { Routes } from '@angular/router'
     AuthentificationModule,
     NotificationModule,
     ReactiveFormsModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
     BrowserModule,
@@ -57,7 +60,9 @@ import { Routes } from '@angular/router'
     NavbarModule,
     SaisieComptableModule,
     TableauDeBordComponent,
-    ImpressionsDocumentsListComponent
+    ImpressionsDocumentsListComponent,
+    HttpClientModule
+
   ]
 })
-export class AppModule {}
+export class AppModule { }

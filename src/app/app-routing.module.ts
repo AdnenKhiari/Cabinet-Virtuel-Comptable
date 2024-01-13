@@ -15,21 +15,37 @@ import { HistoriqueActionsComponent } from './historique-actions/historique-acti
 import { SaisieComptableComponent } from './saisie-comptable/saisie-comptable/saisie-comptable.component'
 import { GestionUserComponent } from './gestion-user/gestion-user.component'
 import { ConfigurationComponent } from './configuration/configuration.component'
+import { autorisationGuard } from './guards/autorisation.guard'
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   { path: 'Signup', component: SignUpComponent },
   { path: 'forget-password', component: ForgotPasswordComponent },
   { path: 'tableau-de-bord', component: TableauDeBordComponent },
-  { path: 'charte-charges', component: CharteChargesComponent },
-  { path: 'RevenuesClients', component: RevenuesClientsComponent },
-  { path: 'charte-ecart-revenues-charges', component: CharteEcartRevenuesChargesComponent },
-  { path: 'impressions-documents-list', component: ImpressionsDocumentsListComponent },
+  { path: 'charte-charges', component: CharteChargesComponent, canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin','Collaborateur']},
+  },
+   { path: 'RevenuesClients', component: RevenuesClientsComponent},
+   //canActivate:[autorisationGuard],
+  // data: { requiredRole: ['Admin','Client']}},
+  { path: 'charte-ecart-revenues-charges', component: CharteEcartRevenuesChargesComponent , canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin','Collaborateur']}},
+  { path: 'impressions-documents-list', component: ImpressionsDocumentsListComponent,canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin']} },
   { path: 'liste-declarations-fiscales', component: ListeDeclarationsFiscalesComponent },
-  { path: 'liste-factures', component: ListeFacturesComponent },
+  { path: 'liste-factures', component: ListeFacturesComponent,canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin','Collaborateur']} },
   { path: 'suivi-echeances-fiscales', component: SuiviEcheancesFiscalesComponent },
-  { path: 'historique-actions', component: HistoriqueActionsComponent },
-  { path: 'Saisie-Comptable', component: SaisieComptableComponent },
+  { path: 'historique-actions', component: HistoriqueActionsComponent,canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin','Collaborateur']} },
+  { 
+    path: 'Saisie-Comptable',
+    component: SaisieComptableComponent,
+    canActivate:[autorisationGuard],
+  data: { requiredRole: ['Admin','Collaborateur']}
+    
+  },
+  
   { path: 'Gestion-User', component: GestionUserComponent },
   { path: 'Configuration', component: ConfigurationComponent }
 ]
