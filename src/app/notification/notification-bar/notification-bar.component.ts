@@ -9,11 +9,12 @@ export class NotificationBarComponent implements OnInit {
   @Input() message!: String
   @Input() icon!: String
   @Input() type!: String
+  //input propreties to receive data from parent component(notification system component)
 
-  isHidden = true
+  isHidden = true //visibility of the component is hidden
 
   toggleVisibility() {
-    this.isHidden = !this.isHidden
+    this.isHidden = !this.isHidden  //toggle the visibility of the component
   }
 
   constructor() {}

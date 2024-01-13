@@ -9,9 +9,9 @@ import { MatTableModule } from '@angular/material/table'
   imports: [MatTableModule]
 })
 export class RevenuesClientsComponent {
-  displayedColumns: string[] = ['position', 'nom', 'recette', 'statut']
+  displayedColumns: string[] = ['position', 'nom', 'recette', 'statut']  //columns displaying information about recipes and their status payed or not
   dataSource = [
-    { position: 1, nom: 'A Consulting', recette: 10079, statut: 'Payé' },
+    { position: 1, nom: 'A Consulting', recette: 10079, statut: 'Payé' }, //some data examples for demonstration purposes
     { position: 2, nom: 'Cabinet B', recette: 40026, statut: 'Payé' },
     { position: 3, nom: 'Sté XYZ', recette: 6941, statut: 'Impayé' },
     { position: 1, nom: 'A Consulting', recette: 10079, statut: 'Payé' },

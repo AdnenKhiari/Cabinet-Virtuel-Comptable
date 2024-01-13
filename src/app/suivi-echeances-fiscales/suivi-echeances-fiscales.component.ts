@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./suivi-echeances-fiscales.component.scss']
 })
 export class SuiviEcheancesFiscalesComponent implements OnInit {
-  echeances: any[] = []
-  showWeeks: { [key: string]: boolean } = {}
-  selectedMonth: string | null = null
+  echeances: any[] = [] //array to store echeance events
+  showWeeks: { [key: string]: boolean } = {} //object to track weeks
+  selectedMonth: string | null = null //currently selected month
   months: string[] = [
     'Janvier',
     'Février',
@@ -24,8 +24,9 @@ export class SuiviEcheancesFiscalesComponent implements OnInit {
     'Octobre',
     'Novembre',
     'Décembre'
-  ]
-  weeks: number[] = [1, 2, 3, 4, 5]
+  ] //array of months names
+
+  weeks: number[] = [1, 2, 3, 4, 5] //array of week numbers
 
   constructor() {}
 
@@ -37,6 +38,7 @@ export class SuiviEcheancesFiscalesComponent implements OnInit {
       this.months.forEach(m => {
         this.showWeeks[m] = m === month
       })
+      //initialize selected month and weeks if month exists
     }
   }
 
@@ -47,18 +49,21 @@ export class SuiviEcheancesFiscalesComponent implements OnInit {
 
       return echeanceMonth === monthIndex
     })
+    // get the echeances events for a month
   }
 
   getWeekNumber(date: number): number {
     return Math.floor(date / 7) + 1
   }
+  // get the week number for a given month
 
   ngOnInit(): void {
     const currentDate = new Date()
     const monthIndex = currentDate.getMonth()
-    this.selectedMonth = this.months[monthIndex]
-    this.showWeeks[this.selectedMonth] = true
+    this.selectedMonth = this.months[monthIndex]  //set the selected month to the current month
+    this.showWeeks[this.selectedMonth] = true  //initialize the showweeks for the default selected month
     this.echeances = [
+    //data for deemonstration purposes inclding echeances for given date options all around the year
       {
         date: new Date('2024-01-23'),
         type: 'Déclaration de TVA',

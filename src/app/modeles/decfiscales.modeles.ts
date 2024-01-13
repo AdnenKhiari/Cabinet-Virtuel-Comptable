@@ -16,6 +16,7 @@ export class DecFiscale {
   public statutadmin: String = ''
   public statutparam: String = ''
   public created: String = ''
+  //propreties of the fiscale declarations of the cabinet owner
 
   constructor(
     public $_firstname?: String,
@@ -41,9 +42,10 @@ export class DecFiscale {
       this.mois = $_decFisc.mois
       this.matriculefiscale = $_decFisc.matriculefiscale
       this.created = $_decFisc.created
+      //passing the cabinet fiscale informations
     }
   }
-
+  //getters
   public getFirstName(): String {
     return this.firstname
   }
@@ -51,7 +53,7 @@ export class DecFiscale {
   public getLastName(): String {
     return this.lastname
   }
-
+  //setters
   public setFirstName($_firstname: String): void {
     this.firstname = $_firstname
   }

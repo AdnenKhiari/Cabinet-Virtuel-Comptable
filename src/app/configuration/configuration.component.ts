@@ -16,6 +16,7 @@ export class ConfigurationComponent implements OnInit {
   tauxImpotSociete: number = 0.25
   comptesBancaires: string[] = ['Compte principal', 'Compte épargne']
   langue: string = 'fr'
+  //example of the configurations properties
 
   constructor() {}
 

@@ -9,8 +9,10 @@ import { MatTableModule } from '@angular/material/table'
   imports: [MatTableModule]
 })
 export class ImpressionsDocumentsListComponent {
-  displayedColumns: string[] = ['position', 'nom', 'type', 'lien']
+  displayedColumns: string[] = ['position', 'nom', 'type', 'lien']  
+  // a list of the proprities of the impression documents
   dataSource = [
+  // data for demonstration purposes of the impression documents
     {
       position: 1,
       nom: 'REF 001',

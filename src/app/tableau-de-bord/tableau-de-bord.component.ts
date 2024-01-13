@@ -14,5 +14,6 @@ import { RevenuesClientsComponent } from '../revenues-clients/revenues-clients.c
 export class TableauDeBordComponent {
   constructor() {}
   chiffreAffaire = 100000
-  Benefice = 10000
+  Benefice = 10000 
+  // data for demonstration purposes 
 }
