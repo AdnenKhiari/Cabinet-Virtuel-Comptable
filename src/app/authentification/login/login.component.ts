@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
         //this.authService.authenticateUser(User).subscribe({
         //next : ()=>{ implement the router here }
         this.successMessage = 'Login successful!'
-        this.router.navigateByUrl('/#client')
+        this.router.navigateByUrl('/tableau-de-bord');
       },
       error: err => {
         this.errorMessage = err
