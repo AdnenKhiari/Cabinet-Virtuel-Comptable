@@ -8,8 +8,7 @@ import { Component, Input, OnInit } from '@angular/core'
 export class NotificationBarComponent implements OnInit {
   @Input() message!: String
   @Input() icon!: String
-  @Input() type!: String
-  //input propreties to receive data from parent component(notification system component)
+  @Input() type!: String  //input propreties to receive data from parent component(notification system component)
 
   isHidden = true //visibility of the component is hidden
 
