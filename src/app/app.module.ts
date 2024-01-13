@@ -16,13 +16,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BilanComponent,
     CompteResultatComponent,
     DeclarationTvaComponent
-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule ,
-    RapportFinanciersRoutingModule,
-    BrowserAnimationsModule
+    RapportFinanciersRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
