@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 import { AuthentificationModule } from './authentification/authentification.module'
@@ -32,6 +31,9 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { ConfigurationComponent } from './configuration/configuration.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { XmlToJsonComponent } from './xml-to-json/xml-to-json.component'
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { FormsModule } from '@angular/forms'
     SuiviEcheancesFiscalesComponent,
     HistoriqueActionsComponent,
     GestionUserComponent,
-    ListeClientsComponent
+    ListeClientsComponent,
+    XmlToJsonComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
