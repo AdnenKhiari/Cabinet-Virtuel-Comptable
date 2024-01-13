@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { User } from '../model/user-model'
+import { User } from '../modeles/user-model'
 import { UUID } from 'angular2-uuid'
 import { Observable, of, throwError } from 'rxjs'
 
@@ -43,7 +43,7 @@ export class AuthenticationService {
       raisonsociale: null,
       nomsociete: null,
       clientcode: 'c123',
-      role: 'user',
+      role: 'client',
       created: { $date: new Date().toISOString() }
     })
   }
@@ -81,7 +81,7 @@ export class AuthenticationService {
       raisonsociale: user.raisonsociale,
       nomsociete: user.nomsociete,
       clientcode: user.clientcode,
-      role: 'user',
+      role: 'admin',
       created: { $date: user.created?.$date }
     })
 
@@ -90,8 +90,10 @@ export class AuthenticationService {
     return of(true)
   }
 
-  public hasRole(role: string): boolean {
-    return this.authenticatedUser?.role === role
+  public hasRole(requiredRole: string): boolean {
+    const storedUser = localStorage.getItem('authUser');
+    const storedUserRole = storedUser ? JSON.parse(storedUser).role : null;
+    return storedUserRole === requiredRole;
   }
   public getUserRole(): string | undefined {
     return this.authenticatedUser?.role

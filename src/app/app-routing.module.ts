@@ -16,6 +16,7 @@ import { SaisieComptableComponent } from './saisie-comptable/saisie-comptable/sa
 import { GestionUserComponent } from './gestion-user/gestion-user.component'
 import { ConfigurationComponent } from './configuration/configuration.component'
 import { autorisationGuard } from './guards/autorisation.guard'
+import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 
 const routes: Routes = [
   
@@ -26,34 +27,37 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgotPasswordComponent },
   { path: 'tableau-de-bord', component: TableauDeBordComponent },
   { path: 'charte-charges', component: CharteChargesComponent, canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin','Collaborateur']},
+  data: { requiredRole: ['admin','Collaborateur']},
   },
    { path: 'RevenuesClients', component: RevenuesClientsComponent},
    //canActivate:[autorisationGuard],
   // data: { requiredRole: ['Admin','Client']}},
   { path: 'charte-ecart-revenues-charges', component: CharteEcartRevenuesChargesComponent , canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin','Collaborateur']}},
+  data: { requiredRole: ['admin','Collaborateur']}},
   { path: 'impressions-documents-list', component: ImpressionsDocumentsListComponent,canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin']} },
+  data: { requiredRole: ['admin']} },
   { path: 'liste-declarations-fiscales', component: ListeDeclarationsFiscalesComponent },
   { path: 'liste-factures', component: ListeFacturesComponent,canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin','Collaborateur']} },
+  data: { requiredRole: ['admin','Collaborateur']} },
   { path: 'suivi-echeances-fiscales', component: SuiviEcheancesFiscalesComponent },
   { path: 'historique-actions', component: HistoriqueActionsComponent,canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin','Collaborateur']} },
+  data: { requiredRole: ['admin','Collaborateur']} },
   { 
     path: 'Saisie-Comptable',
     component: SaisieComptableComponent,
     canActivate:[autorisationGuard],
-  data: { requiredRole: ['Admin','Collaborateur']}
+  data: { requiredRole: ['admin','Collaborateur']}
     
   },
   
   { path: 'Gestion-User', component: GestionUserComponent },
-  { path: 'Configuration', component: ConfigurationComponent }
+  { path: 'Configuration', component: ConfigurationComponent },
+  {path:"liste-clients",component:ListeClientsComponent,canActivate:[autorisationGuard],
+  data: { requiredRole: ['admin','Collaborateur']}}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+ 

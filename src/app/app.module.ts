@@ -34,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
 import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { autorisationGuard } from './guards/autorisation.guard'
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     GestionUserComponent,
     ListeClientsComponent
   ],
-  providers: [],
+  providers: [autorisationGuard],
   bootstrap: [AppComponent],
   imports: [
     BrowserModule,
@@ -65,7 +66,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     TableauDeBordComponent,
     ImpressionsDocumentsListComponent,
     FormsModule,
-    NgbModule
-  ]
+    NgbModule]
+    
 })
 export class AppModule { }
