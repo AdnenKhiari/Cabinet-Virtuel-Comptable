@@ -86,7 +86,7 @@ export class AuthenticationService {
 
     localStorage.setItem('authUser', userJsonString)
 
-    return of(true) // Assuming you want to return an observable indicating success
+    return of(true)
   }
 
   public hasRole(role: string): boolean {
