@@ -1,0 +1,60 @@
+<!-- suivi-echeances-fiscales.component.html -->
+
+<div class="suivi-echeances-container body-with-toolbar mt-5">
+  <div class="title-options-container">
+    <h2 class="component-title">Suivi des Échéances Fiscales</h2>
+
+    <div class="header-options">
+      <div>
+        <label for="sort">Trier:</label>
+        <select id="sort">
+          <option value="date">Par Date</option>
+          <option value="type">Par Type</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="filter">Filtrer:</label>
+        <input type="text" id="filter" placeholder="Filtrer par..." />
+      </div>
+
+      <div>
+        <label for="year">Année:</label>
+        <select id="year">
+          <option>2025</option>
+          <option>2024</option>
+          <option selected>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display Months -->
+  <div class="months">
+    <div *ngFor="let month of months" class="month">
+      <span (click)="toggleWeeks(month)" [ngClass]="{ selected: selectedMonth === month }">
+        {{ month }}
+      </span>
+      <div *ngIf="showWeeks[month]">
+        <h2 class="month-name">{{ month }}</h2>
+        <div class="weeks">
+          <div *ngFor="let week of weeks" class="week">
+            <div class="week-header">Semaine {{ week }}</div>
+            <div *ngFor="let echeance of echeances" class="echeance">
+              <div class="date-echeance">{{ echeance.date }}</div>
+              <div class="content-echeance">
+                <div>{{ echeance.type }}</div>
+                <div>{{ echeance.description }}</div>
+                <div>{{ echeance.status }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

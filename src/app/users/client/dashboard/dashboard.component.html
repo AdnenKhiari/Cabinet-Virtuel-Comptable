@@ -1,0 +1,59 @@
+<p class="margin-none">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="drawer.toggle()" class="icon" aria-label="Menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Cabinet Virtuel</span>
+      <span class="spacer"></span>
+      <button mat-button class="icon" aria-label="profile icon">
+        <div class="icons-container" [matMenuTriggerFor]="profileMenu">
+          <mat-icon>account_circle</mat-icon>
+          <mat-icon aria-hidden="false" fxflex>arrow_drop_down</mat-icon>
+        </div>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-menu #profileMenu="matMenu" xPosition="before">
+    <button mat-menu-item routerLink="/home">
+      <mat-icon>logout</mat-icon>
+      <span class="item-title">Logout</span>
+    </button>
+  </mat-menu>
+</p>
+<div class="drawer-parent">
+  <mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side" opened>
+      <mat-list class="list-items">
+        <mat-list-item>
+          <mat-icon matListItemIcon class="list_header_icon" routerLinkActive="active-link">
+            dashboard
+          </mat-icon>
+          <div matListItemTitle routerLinkActive="active-link" class="list-item-text">
+            Dashboard
+          </div>
+        </mat-list-item>
+        <mat-divider class="list-divider"></mat-divider>
+        <a>
+          <mat-list-item routerLink="./overview">
+            <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">
+              data_usage
+            </mat-icon>
+            <div matListItemTitle routerLinkActive="active-link" class="list-item-text">
+              Overview
+            </div>
+          </mat-list-item>
+        </a>
+        <a>
+          <mat-list-item routerLink="./canvas">
+            <mat-icon matListItemIcon class="sidebar-icon" routerLinkActive="active-link">
+              fact_checked
+            </mat-icon>
+            <div matListItemTitle routerLinkActive="active-link" class="list-item-text">Canvas</div>
+          </mat-list-item>
+        </a>
+      </mat-list>
+    </mat-drawer>
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+</div>
