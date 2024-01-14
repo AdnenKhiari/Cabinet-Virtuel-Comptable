@@ -7,14 +7,15 @@ import { NotificationBarModel } from './notification-bar.component.model'
   styleUrls: ['./notification-bar.component.css']
 })
 export class NotificationBarComponent implements OnInit {
-  @Input() notification!: NotificationBarModel
+  @Input() message!: String
+  @Input() icon!: String
+  @Input() type!: String  //input propreties to receive data from parent component(notification system component)
 
-  ngOnInit() {
-    this.notification.isHidden = true
-  }
+  isHidden = true //visibility of the component is hidden
 
   toggleVisibility() {
-    this.notification.isHidden = !this.notification.isHidden
+    this.isHidden = !this.isHidden  //toggle the visibility of the component
+
   }
 
   constructor() {}

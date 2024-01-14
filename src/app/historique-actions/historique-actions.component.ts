@@ -13,10 +13,11 @@ interface Action {
   styleUrls: ['./historique-actions.component.scss']
 })
 export class HistoriqueActionsComponent implements OnInit {
-  actionHistory: Action[] = []
+  actionHistory: Action[] = []  //initialization of the action history
 
   ngOnInit(): void {
     this.actionHistory = [
+    //JSON data for demonstration of the action history
       {
         description: 'Création du dossier client',
         date: '2023-07-15',

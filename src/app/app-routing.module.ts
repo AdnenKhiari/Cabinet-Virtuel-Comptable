@@ -5,7 +5,9 @@ import { ForgotPasswordComponent } from './authentification/forgot-password/forg
 import { LoginComponent } from './authentification/login/login.component'
 import { SignUpComponent } from './authentification/sign-up/sign-up.component'
 
-const routes: Routes = [
+
+const routes: Routes = [     //specify the routes for the project components
+
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'forget-password', component: ForgotPasswordComponent },

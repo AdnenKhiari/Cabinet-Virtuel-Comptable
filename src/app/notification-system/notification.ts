@@ -1,5 +1,7 @@
 export class Notification {
-  constructor(
+
+  constructor(   //Notifications propreties
+
     public id: number,
     public type: NotificationType,
     public title: string,
@@ -9,7 +11,7 @@ export class Notification {
 }
 
 export enum NotificationType {
-  success = 0,
+  success = 0,  //types of notifications 
   warning = 1,
   error = 2,
   info = 3

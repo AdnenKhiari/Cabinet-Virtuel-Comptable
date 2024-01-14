@@ -10,12 +10,12 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 })
 export class CharteEcartRevenuesChargesComponent {
   chartOptions = {
-    animationEnabled: true,
+    animationEnabled: true,  //enable animation
     title: {
-      text: 'Marge bénéficiaire'
+      text: 'Marge bénéficiaire'  //chart title
     },
     axisY: {
-      title: 'MDT'
+      title: 'MDT' //Y-axis title
     },
     data: [
       {
@@ -25,7 +25,9 @@ export class CharteEcartRevenuesChargesComponent {
         legendMarkerType: 'square',
         color: 'rgba(40,175,101,0.6)',
         markerSize: 0,
-        dataPoints: [
+        //info for the revenues chart
+
+        dataPoints: [ //data points of the revenues
           { x: new Date(2013, 0, 1, 0, 0), y: 7, label: 'midnight' },
           { x: new Date(2013, 0, 1, 1, 0), y: 8 },
           { x: new Date(2013, 0, 1, 2, 0), y: 5 },
@@ -59,7 +61,10 @@ export class CharteEcartRevenuesChargesComponent {
         legendMarkerType: 'square',
         color: 'rgba(0,75,141,0.7)',
         markerSize: 0,
+        //info for the depenses chart
+
         dataPoints: [
+        //data points for the depenses chart
           { x: new Date(2013, 0, 1, 0, 0), y: 12, label: 'midnight' },
           { x: new Date(2013, 0, 1, 1, 0), y: 10 },
           { x: new Date(2013, 0, 1, 2, 0), y: 3 },

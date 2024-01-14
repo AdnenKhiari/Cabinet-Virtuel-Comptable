@@ -10,16 +10,18 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
 })
 export class CharteChargesComponent {
   chartOptions = {
-    animationEnabled: true,
+    animationEnabled: true,  //enable animation for the chart
     title: {
-      text: 'Réparition des charges'
+      text: 'Réparition des charges' //title of the chart
     },
     data: [
       {
         type: 'doughnut',
         yValueFormatString: "#,###.##'%'",
         indexLabel: '{name}',
-        dataPoints: [
+        // info for the charges chart
+
+        dataPoints: [// data points for the charges chart
           { y: 28, name: 'RH' },
           { y: 10, name: 'Legal' },
           { y: 20, name: 'Production' },
