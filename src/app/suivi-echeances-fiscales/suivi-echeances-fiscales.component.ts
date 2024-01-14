@@ -28,8 +28,6 @@ export class SuiviEcheancesFiscalesComponent implements OnInit {
 
   weeks: number[] = [1, 2, 3, 4, 5] //array of week numbers
 
-  constructor() {}
-
   toggleWeeks(month: string): void {
     if (this.selectedMonth === month) {
       this.selectedMonth = null
