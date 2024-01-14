@@ -2,6 +2,7 @@ import { NgModule, isDevMode } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 import { AppRoutingModule } from './app-routing.module'
+import { MainOutletComponent } from './main-outlet/main-outlet.component'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
 
@@ -39,6 +40,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 @NgModule({
   declarations: [
     AppComponent,
+    MainOutletComponent,
     ListeClientsComponent,
     GestionComptesComponent,
     ComptesBancairesComponent,
