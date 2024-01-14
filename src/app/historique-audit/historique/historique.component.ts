@@ -9,7 +9,6 @@ import { Historique } from 'src/app/models/historique-audit.model'
   styleUrls: ['./historique.component.css']
 })
 export class HistoriqueComponent {
-  
   constructor(private historique: HistoriqueService) {}
   histories: Historique[] = []
   ngOnInit() {
@@ -17,15 +16,15 @@ export class HistoriqueComponent {
       this.histories = data
     })
   }
-  showSuccessAlert: boolean = false;
-  showSuccessAlert1: boolean = false;
+  showSuccessAlert: boolean = false
+  showSuccessAlert1: boolean = false
 
   toggleSuccessAlert() {
-    this.showSuccessAlert1 = !this.showSuccessAlert1;
+    this.showSuccessAlert1 = !this.showSuccessAlert1
   }
 
   deleteHistorique(id: number) {
-    this.showSuccessAlert = !this.showSuccessAlert;
+    this.showSuccessAlert = !this.showSuccessAlert
     this.historique.deleteHistorique(id).subscribe(() => {
       this.histories = this.histories.filter(historique => historique.id !== id)
     })
@@ -38,7 +37,7 @@ export class HistoriqueComponent {
   }
 
   updateHistorique(historique: Historique) {
-    this.showSuccessAlert = !this.showSuccessAlert;
+    this.showSuccessAlert = !this.showSuccessAlert
     this.historique.updateHistorique(historique).subscribe(data => {
       this.histories = this.histories.map(historique => {
         if (historique.id === data.id) {
@@ -54,5 +53,4 @@ export class HistoriqueComponent {
       this.histories = this.histories.filter(historique => historique.id === id)
     })
   }
-  
 }
