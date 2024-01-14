@@ -1,16 +1,18 @@
 # Build Status
 
 ## Develop
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cacdbd9a-2221-4de5-b3f5-eb8e16f5ab49/deploy-status?branch=develop)](https://app.netlify.com/sites/cabinet-comptable/deploys?branch=develop&filter=develop)
 
 ## Main
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cacdbd9a-2221-4de5-b3f5-eb8e16f5ab49/deploy-status?branch=main)](https://app.netlify.com/sites/cabinet-comptable/deploys?branch=main&filter=main)
 
 # Comptable
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
-# Git Flow 
+# Git Flow
 
 Check this link : https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html
 

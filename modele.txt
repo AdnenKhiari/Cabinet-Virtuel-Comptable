@@ -1,0 +1,13 @@
+export interface Statistiques {
+  totalFiles: number;
+  resolvedFiles: number;
+  ongoingFiles: number;
+  // Autres statistiques pertinentes
+  // Autres attributs spécifiques à votre modèle, si présents
+}
+export interface Priorite {
+  _id: string;
+  name: string;
+  description: string;
+  // Autres attributs spécifiques à votre modèle, si présents
+}

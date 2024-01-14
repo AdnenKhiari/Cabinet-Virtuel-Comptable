@@ -1,11 +1,11 @@
 <button (click)="toggleVisibility()">Toggle</button>
 
-<div [hidden]="isHidden">
+<div *ngIf="notification.isHidden === false">
   <div class="outer">
-    <div class="icon_wrapper" [class]="type">
-      <img [src]="icon" />
+    <div class="icon_wrapper" [class]="notification.type">
+      <img [src]="notification.icon" />
     </div>
-    <div class="message_wrapper">{{ message }}</div>
+    <div class="message_wrapper">{{ notification.message }}</div>
   </div>
 </div>
 

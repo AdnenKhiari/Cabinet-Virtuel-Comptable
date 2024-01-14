@@ -1,30 +1,39 @@
-<h1>Cabinet Comptable Virtuel</h1>
-<br />
-<br />
-<div class="row">
-  <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+<div class="row offset-md-1">
+  <div class="col-md-10">
     <div class="card auth">
-      <div class="card-body auth-card">
-        <form>
-          <div class="form-group">
-            <label for="email">Email :</label>
-            <input type="text" name="email" class="form-control" placeholder="Email" />
-          </div>
-          <div class="form-group">
-            <label for="password">Password :</label>
-            <input type="password" name="password" class="form-control" placeholder="********" />
-            <div class="text-right forget-pass">
-              <a routerLink="/forget-password">Forget Password ?</a>
+      <div class="row">
+        <div class="col-md-5 auth-image offset-md-1">
+          <img src="assets/compta.jpg" alt="Auth Image" class="img-fluid" />
+        </div>
+        <div class="col-md-5">
+          <div class="card-body auth-card">
+            <form>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" name="email" class="form-control" placeholder="Email" />
+                <div class="invalid-feedback">Please insert Email.</div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password :</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="********" />
+                <div class="text-right forget-pass">
+                  <a routerLink="/forget-password">Forget Password ?</a>
+                </div>
+              </div>
+              <div class="text-center">
+                <input type="submit" class="btn btn-my" value="Login" />
+              </div>
+            </form>
+            <div class="text-center sign-up">
+              Don`t have an account ?
+              <a routerLink="/sign-up">Sign Up</a>
+              here.
             </div>
           </div>
-          <div class="text-center">
-            <input type="submit" class="btn btn-my" value="Login" />
-          </div>
-        </form>
-        <div class="text-center sign-up">
-          Don`t have an account ?
-          <a routerLink="/sign-up">Sign Up</a>
-          here.
         </div>
       </div>
     </div>
