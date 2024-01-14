@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890154"
+  },
+  "title": "Déclaration mensuelle pour les P.Ph",
+  "nature": "Personne Physique",
+  "natureactivite": "Profession Libérale;Commerçant;Artisan",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-01-14T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.241Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890155"
+  },
+  "title": "Déclaration de C.N.S.S",
+  "nature": "",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-01-14T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890157"
+  },
+  "title": "Liste des factures émises en suspension des taxes sur le chiffre d'affaires",
+  "nature": "",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-01-27T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890156"
+  },
+  "title": "Déclaration mensuelle pour les P.M",
+  "nature": "Personne Morale",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-01-27T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890158"
+  },
+  "title": "Liste des bons de commande et des factures d'achats en suspension des taxes sur le chiffre d'affaires",
+  "nature": "",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-01-27T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e0890159"
+  },
+  "title": "Vignette pour les P.M",
+  "nature": "Personne Morale",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-02-04T23:00:00.000Z"
+  },
+  "description": "Pour les voitures autres que de location ou  celles acquises par voie de leasing ou ijara",
+  "created": {
+    "$date": "2023-05-22T10:46:13.264Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e089015e"
+  },
+  "title": "Vignettes pour les personnes physiques (numéros pairs)",
+  "nature": "Personne Physique",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-03-04T23:00:00.000Z"
+  },
+  "description": "Pour les voitures autres que de location ou  celles acquises par voie de leasing ou ijara",
+  "created": {
+    "$date": "2023-05-22T10:46:13.271Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e089015b"
+  },
+  "title": "Déclaration de la +value de cesion des actions, parts sociales et parts des fonds non rattachées à un bilan",
+  "nature": "Personne Physique",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-02-24T23:00:00.000Z"
+  },
+  "description": "Déclaration de la plus-value de cession des actions, des parts sociales et des parts des fonds non rattachées à un bilan",
+  "created": {
+    "$date": "2023-05-22T10:46:13.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e089015a"
+  },
+  "title": "Déclaration mensuelle pour les P.Ph",
+  "nature": "Personne Physique",
+  "natureactivite": "Profession Libérale;Commerçant;Artisan",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-02-14T23:00:00.000Z"
+  },
+  "description": "",
+  "created": {
+    "$date": "2023-05-22T10:46:13.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646b47f5e62f84c9e089015c"
+  },
+  "title": "Déclaration d'impôt sur le revenu pour les personnes qui réalisent certains revenus.",
+  "nature": "Personne Physique",
+  "natureactivite": "",
+  "activite": "",
+  "sousactivite": "",
+  "regimefiscal": "",
+  "date": {
+    "$date": "2022-02-24T23:00:00.000Z"
+  },
+  "description": "Déclaration d'impôt sur le revenu pour les personnes qui réalisent des revenus de capitaux mobiliers ou des revenus de valeurs mobilières ou des revenus fonciers ou des revenus de source étrangère autres que les salaires, pensions et rentes viagères.",
+  "created": {
+    "$date": "2023-05-22T10:46:13.269Z"
+  },
+  "__v": 0
+}]

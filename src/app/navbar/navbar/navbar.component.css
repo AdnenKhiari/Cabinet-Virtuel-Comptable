@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.navbarre {
+  background-color: #3b3e42;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.171);
+  height: 60px;
+}
+
+.navbarre a {
+  margin: 0;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+.navbarre a:hover {
+  background-color: #776de1;
+  color: black;
+  transition: 0.1s;
+}
+
+.active {
+  background-color: #cd85e3;
+  color: white;
+}

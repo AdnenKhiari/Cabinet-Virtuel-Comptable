@@ -1,26 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-html,
-body {
-    height: 100%;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/* Global font and text color */
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+
+/* Background color for the entire page */
+html,
+body {
+  height: 100%;
+  background-color: #ecf0f1;
+}
+
+/* Styling for links */
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Professional button styles */
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Header styles */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 .body-with-toolbar {
-    height: calc(100vh - 64px);
-    padding: 0 15px 0 15px;
+  height: calc(100vh - 64px);
+  padding: 0 15px 0 15px;
 }
 
 .modal-backdrop {
-    display: none;
-    z-index: 1040 !important;
+  display: none;
+  z-index: 1040 !important;
 }
 
 .modal-content {
-    margin: 2px auto;
-    z-index: 1100 !important;
+  margin: 2px auto;
+  z-index: 1100 !important;
 }

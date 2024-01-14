@@ -6,7 +6,16 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "prepare": "husky install",
+    "pretty": "npx prettier --write  ./src/app/ --config .prettierrc",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,css,html}": [
+      "npm run pretty"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -21,23 +30,46 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@canvasjs/angular-charts": "^1.0.3",
+    "@ng-bootstrap/ng-bootstrap": "^15.1.2",
+    "@ngrx/effects": "^16.3.0",
+    "@ngrx/store": "^16.3.0",
+    "@ngrx/store-devtools": "^16.3.0",
+    "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.3.2",
     "canvasjs": "^1.8.3",
     "rxjs": "~7.8.0",
+    "stream": "^0.0.2",
     "tslib": "^2.3.0",
+    "xml2js": "^0.6.2",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.2",
+    "@angular-devkit/build-angular": "^16.2.11",
+    "@angular-eslint/builder": "16.3.1",
+    "@angular-eslint/eslint-plugin": "16.3.1",
+    "@angular-eslint/eslint-plugin-template": "16.3.1",
+    "@angular-eslint/schematics": "^16.3.1",
+    "@angular-eslint/template-parser": "16.3.1",
     "@angular/cli": "~16.2.2",
     "@angular/compiler-cli": "^16.2.0",
+    "@angular/localize": "^16.2.0",
+    "@ngrx/eslint-plugin": "^16.3.0",
     "@types/jasmine": "~4.3.0",
+    "@types/mocha": "^10.0.6",
+    "@types/xml2js": "^0.4.14",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0",
+    "timers": "^0.1.1",
     "typescript": "~5.1.3"
   }
 }
