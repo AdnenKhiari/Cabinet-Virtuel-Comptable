@@ -50,35 +50,12 @@ export class ListeDeclarationsFiscalesComponent {
 
     let user = new DecFiscale(firstName, lastName, address)
 
-    // this.userService.registerUser(user)
-    // 	.subscribe({
-    // 		next: (data: User) => {
-    // 			console.log(data);
-    // 		},
-    // 		error: (error) => {
-    // 			console.log(error);
-    // 		}
-    // 	});
-    // window.location.reload();
     this.loadAllDeclarations()
     this.ngOnInit()
   }
 
   public onUpdateUser(id: Number) {
     this.updatedId = id
-    // this.userService.getUserById(id)
-    // .subscribe({
-    // 	next: (data: User[]) => {
-    // 		this.user.setFirstName(data[0].firstname);
-    // 		this.user.setLastName(data[0].lastname);
-    // 		this.user.setAddress(data[0].address);
-
-    // 		this.initUpdateForm(this.user);
-    // 	},
-    // 	error: (error) => {
-    // 		console.log(error);
-    // 	}
-    // });
   }
 
   public onSubmitUpdate() {
@@ -89,24 +66,12 @@ export class ListeDeclarationsFiscalesComponent {
 
     console.log(this.updateDeclarationForm)
     if (this.updatedId) {
-      // this.userService.updateUser(this.updatedId, this.updatedDeclaration)
-      // 	.subscribe({
-      // 		next: (data: User) => {
-      // 			console.log("Modification réussie" + data);
-      // 		},
-      // 		error: (error) => {
-      // 			console.log(error);
-      // 		}
-      // 	});
     }
     window.location.reload()
   }
 
   public onDeleteUser(id: Number) {
-    if (window.confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')) {
-      // this.userService.removeUser(id)
-      // 	.subscribe(data => this.ngOnInit())
-      // window.location.reload();
+    if (window.confirm('Êtes-vous sûr de vouloir supprimer cette declaration ?')) {
       this.loadAllDeclarations()
       this.ngOnInit()
     }

@@ -1,1 +1,65 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global font and text color */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+
+/* Background color for the entire page */
+html,
+body {
+  height: 100%;
+  background-color: #ecf0f1;
+}
+
+/* Styling for links */
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Professional button styles */
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Header styles */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

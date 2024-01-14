@@ -26,6 +26,7 @@
               "src/_redirects"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
@@ -36,7 +37,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1mb",
+                  "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 },
                 {
@@ -111,6 +112,6 @@
     "schematicCollections": [
       "@angular-eslint/schematics"
     ],
-    "analytics": "2a4bf58e-dd36-4a0f-b547-53c77894af7a"
+    "analytics": false
   }
 }
