@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'
+import { NgModule, isDevMode } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 import { AppRoutingModule } from './app-routing.module'
@@ -32,6 +32,9 @@ import { XmlToJsonComponent } from './xml-to-json/xml-to-json.component'
 import { ListeFacturesComponent } from './liste-factures/liste-factures.component'
 import { ListeDeclarationsFiscalesComponent } from './liste-declarations-fiscales/liste-declarations-fiscales.component'
 import { ListeClientsComponent } from './liste-clients/liste-clients.component'
+import { StoreModule } from '@ngrx/store'
+import { EffectsModule } from '@ngrx/effects'
+import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { ListeClientsComponent } from './liste-clients/liste-clients.component'
     ImpressionsDocumentsListComponent,
     FormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
   ]
 })
 export class AppModule {}
