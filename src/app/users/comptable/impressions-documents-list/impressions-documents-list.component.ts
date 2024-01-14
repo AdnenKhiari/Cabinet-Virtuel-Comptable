@@ -3,7 +3,7 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-impressions-documents-list',
   templateUrl: './impressions-documents-list.component.html',
-  styleUrls: ['./impressions-documents-list.component.css'],
+  styleUrls: ['./impressions-documents-list.component.css']
 })
 export class ImpressionsDocumentsListComponent {
   displayedColumns: string[] = ['position', 'nom', 'type', 'lien']

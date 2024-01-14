@@ -6,7 +6,7 @@ import { AfterViewInit, Component } from '@angular/core'
   styleUrls: ['./charte-charges.component.css']
 })
 export class CharteChargesComponent implements AfterViewInit {
-  chartOptions: any;
+  chartOptions: any
   ngAfterViewInit() {
     this.chartOptions = {
       animationEnabled: true,

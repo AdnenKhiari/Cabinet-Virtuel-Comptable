@@ -26,7 +26,11 @@
 </div>
 
 <!-- Modal to add a declaration-->
-<div class="modal fade" id="addDeclarationModal" tabindex="-1" aria-labelledby="addDeclarationModalLabel"
+<div
+  class="modal fade"
+  id="addDeclarationModal"
+  tabindex="-1"
+  aria-labelledby="addDeclarationModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -38,7 +42,11 @@
         <div class="modal-body">
           <div class="mb-3">
             <label for="prenom" class="col-form-label">Matricule Fiscale</label>
-            <input type="text" class="form-control" id="matriculeFiscale" formControlName="matriculeFiscale" />
+            <input
+              type="text"
+              class="form-control"
+              id="matriculeFiscale"
+              formControlName="matriculeFiscale" />
           </div>
           <div class="mb-3">
             <label for="prenom" class="col-form-label">Prénom</label>
@@ -65,7 +73,11 @@
 </div>
 
 <!-- Modal to edit a declaration-->
-<div class="modal fade" id="editDeclarationModal" tabindex="-1" aria-labelledby="editDeclarationModalLabel"
+<div
+  class="modal fade"
+  id="editDeclarationModal"
+  tabindex="-1"
+  aria-labelledby="editDeclarationModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -73,15 +85,27 @@
         <h3 class="modal-title" id="editDeclarationModalLabel">Modifier une déclaration</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form *ngIf="updateDeclarationForm" [formGroup]="updateDeclarationForm" (ngSubmit)="onSubmitUpdate()">
+      <form
+        *ngIf="updateDeclarationForm"
+        [formGroup]="updateDeclarationForm"
+        (ngSubmit)="onSubmitUpdate()">
         <div class="modal-body">
           <div class="mb-3">
             <label for="prenom" class="col-form-label">Matricule Fiscale</label>
-            <input type="text" class="form-control" id="matriculeFiscale" formControlName="matriculeFiscale" />
+            <input
+              type="text"
+              class="form-control"
+              id="matriculeFiscale"
+              formControlName="matriculeFiscale" />
           </div>
           <div class="mb-3">
             <label for="prenom" class="col-form-label">Prénom</label>
-            <input type="text" class="form-control" id="prenom" formControlName="firstname" value="" />
+            <input
+              type="text"
+              class="form-control"
+              id="prenom"
+              formControlName="firstname"
+              value="" />
           </div>
           <div class="mb-3">
             <label for="nom" class="col-form-label">Nom</label>
@@ -89,7 +113,12 @@
           </div>
           <div class="mb-3">
             <label for="address" class="col-form-label">Adresse</label>
-            <input type="text" class="form-control" id="address" formControlName="address" value="" />
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              formControlName="address"
+              value="" />
           </div>
         </div>
         <div class="modal-footer">

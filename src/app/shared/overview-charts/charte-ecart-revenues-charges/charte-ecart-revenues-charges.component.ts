@@ -7,7 +7,7 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts'
   styleUrls: ['./charte-ecart-revenues-charges.component.css']
 })
 export class CharteEcartRevenuesChargesComponent implements AfterViewInit {
-  chartOptions: any;
+  chartOptions: any
   ngAfterViewInit() {
     this.chartOptions = {
       animationEnabled: true,

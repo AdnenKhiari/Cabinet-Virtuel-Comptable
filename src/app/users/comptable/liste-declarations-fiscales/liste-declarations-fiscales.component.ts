@@ -33,7 +33,7 @@ export class ListeDeclarationsFiscalesComponent {
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
       address: ['', Validators.required],
-      matriculeFiscale: ['', Validators.required],
+      matriculeFiscale: ['', Validators.required]
     })
   }
 
