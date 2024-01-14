@@ -1,0 +1,67 @@
+<div class="container mt-4">
+  <h2>Configuration de l'application</h2>
+
+  <div class="form-group">
+    <label for="tauxTVA">Taux de TVA:</label>
+    <input type="number" class="form-control" id="tauxTVA" />
+  </div>
+
+  <div class="form-group">
+    <label>Règles fiscales:</label>
+    <div class="form-check" *ngFor="let regle of reglesFiscales">
+      <input class="form-check-input" type="radio" name="regleFiscale" id="{{ regle }}" />
+      <label class="form-check-label" for="{{ regle }}">{{ regle }}</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Catégories de dépenses:</label>
+    <div class="form-check" *ngFor="let categorie of categoriesDepenses">
+      <input class="form-check-input" type="radio" name="categorieDepense" id="{{ categorie }}" />
+      <label class="form-check-label" for="{{ categorie }}">{{ categorie }}</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="deviseParDefaut">Devise par défaut:</label>
+    <input type="text" class="form-control" id="deviseParDefaut" />
+  </div>
+
+  <div class="form-group">
+    <label for="periodeFiscale">Période fiscale:</label>
+    <select class="form-control" id="periodeFiscale">
+      <option value="Annuelle">Annuelle</option>
+      <option value="Trimestrielle">Trimestrielle</option>
+      <!-- Ajoutez d'autres options selon vos besoins -->
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="modeRemuneration">Mode de rémunération:</label>
+    <input type="text" class="form-control" id="modeRemuneration" />
+  </div>
+
+  <div class="form-group">
+    <label for="tauxImpotSociete">Taux d'impôt sur les sociétés:</label>
+    <input type="number" class="form-control" id="tauxImpotSociete" />
+  </div>
+
+  <div class="form-group">
+    <label>Comptes bancaires:</label>
+    <div class="form-check" *ngFor="let compte of comptesBancaires">
+      <input class="form-check-input" type="checkbox" id="{{ compte }}" />
+      <label class="form-check-label" for="{{ compte }}">{{ compte }}</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Langue:</label>
+    <select class="form-control" id="langue">
+      <option value="fr">Français</option>
+      <option value="ar">Arabe</option>
+      <option value="en">Anglais</option>
+    </select>
+  </div>
+
+  <!-- Ajoutez d'autres éléments HTML pour les nouvelles configurations -->
+</div>
