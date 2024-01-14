@@ -16,7 +16,7 @@ export class ListeClientsComponent implements OnInit {
   clients: Client[] = []
   selectedClient: Client | null = null
   closeResult = ''
-  errorMessage: string | null = nullci
+  errorMessage: string | null = null
   //initialization of the clients and error messages
 
   constructor(private modalService: NgbModal) {} // constructor with dependency injection
