@@ -11,3 +11,63 @@ export interface Priorite {
   description: string;
   // Autres attributs spécifiques à votre modèle, si présents
 }
+export interface Utilisateur {
+    id: number;
+    nomUtilisateur: string;
+    motDePasse: string;
+    role: string; // "Client", "Manager", "Senior", "Comptable"
+    email: string;
+    telephone: string;
+    adresse: string;
+    creation:Date;
+  }
+
+export interface Reclamation {
+    id: number;
+    client: Utilisateur; // Utilisateur client
+    dateCreation: Date;
+    etat: string;
+    description: string;
+    fichierExcel: string; // Nom du fichier Excel en PJ
+}
+export interface CarouselInterface {
+    _id: string,
+    titre: string,
+    commentaire: string,
+    description: string,
+    ficheUrl: string,
+    rang:number,
+    tarifs?:number[],
+}
+export interface MailInformation {
+  id: string;
+  destinataire: Client;
+  fichierExcel: FichierExcel;
+  dateEnvoi: Date;
+}
+export interface Commentaire {
+  id: string;
+  author: string; // Auteur du commentaire
+  text: string; // Texte du commentaire
+  creationDate: Date; // Date de création du commentaire
+  claimId: string; // Identifiant de la réclamation associée
+  status: "Pending" | "Approved" | "Rejected"; // Statut du commentaire (en attente, approuvé, rejeté, etc.)
+  attachments?: string[]; // Liste des fichiers joints au commentaire
+}
+export interface MembreCabinet {
+  id: string;
+  nom: string;
+  prenom: string;
+  email: string;
+  role: string;
+}
+
+export interface TravailMembreCabinet {
+  id: string; // Identifiant du travail chronométré
+  membreCabinet: MembreCabinet; // Membre du cabinet associé au travail
+  tache: string; // Description de la tâche effectuée
+  tempsPasse: number; // Temps passé sur la tâche en minutes
+  dateDebut: Date; // Date de début du travail
+  dateFin: Date; // Date de fin du travail
+  clientCode?: string; // Code client lié à la tâche (si applicable)
+}
